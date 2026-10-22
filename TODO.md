@@ -1,13 +1,19 @@
 # DPGSA UoN Homepage — TODO
 
 ## Draft status
-The homepage now contains clearly identified fictional demo content for layout review. Demo data is not official DPGSA information. TypeScript checking and the static build previously passed; recheck after these latest changes. This remains a draft pending the user's brand and content details.
+The homepage is a photo-led layout demo, not the final official site. Sample articles, events, resources and copy remain visibly identified as demo material. Student stock photos are illustrative only and are not DPGSA members or association activities. TypeScript checking and the static build must pass for this revision. The user's logo, final brand guidance and verified association content are still pending.
 
 ## Public homepage introduction and navigation — demo draft implemented
 - The Home Page shall include an introduction to DPGSA UoN and its mission, vision or a concise statement of the association's purpose.
 - The homepage shall provide a concise overview of the association and its role without inventing organizational facts or affiliation claims. Any demo copy must be visibly identified as sample copy.
 - The homepage shall include responsive public navigation that previews the planned public information architecture while keeping all non-homepage pages out of this milestone.
 - The page shall be responsive for mobile phones, tablets and desktop devices, with accessible navigation, readable typography and appropriate colour contrast.
+
+## Visual direction and photography carousel — revised to match user feedback
+- The user said the page looked "too ai with the dots and dashes and themes and lack of photos"; simplify the visual style and remove ornamental dot, orbit and dashed motifs.
+- Use a conventional association-homepage structure inspired by the user's FALAS.org reference, including a working photo carousel with visible previous/next controls and an image count.
+- Use genuine photos, with clear source credits. Any stock student photos must be identified as illustrative and must not imply they depict DPGSA members or real association events.
+- Keep the persistent demo notice and do not substitute stock photography for official association photos when those are provided.
 
 ## Homepage publications and verified content — demo cards implemented; official content pending
 - The Home Page shall include featured articles and recent publications.
