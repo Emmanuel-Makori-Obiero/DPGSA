@@ -1,4 +1,6 @@
 import { PageIntro } from "@/components/SiteLayout";
+import PhotoGallery from "@/components/PhotoGallery";
+import { boardGroupPhoto } from "@/data/clubPhotos";
 
 const focusAreas = [
   "Digital Rights and Policy Regulation",
@@ -65,6 +67,13 @@ export default function About() {
           </div>
         </div>
       </section>
+      <PhotoGallery
+        eyebrow="Our community"
+        title="Students learning together."
+        description="An Association group photo from the shared activity archive."
+        photos={[boardGroupPhoto]}
+        columns={3}
+      />
     </>
   );
 }

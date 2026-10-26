@@ -7,6 +7,8 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import HomeHeroSlider from "@/components/HomeHeroSlider";
+import PhotoGallery from "@/components/PhotoGallery";
+import { boardGroupPhoto, meetingPhotos } from "@/data/clubPhotos";
 
 const focusAreas = [
   { icon: Scale, title: "Digital Rights and Policy Regulation" },
@@ -75,6 +77,14 @@ export default function Home() {
           </a>
         </div>
       </section>
+
+      <PhotoGallery
+        eyebrow="Association moments"
+        title="Learning and meeting together."
+        description="A few moments from DPGSA meetings and the Association community."
+        photos={[boardGroupPhoto, ...meetingPhotos]}
+        tone="muted"
+      />
 
       <section className="about-band" aria-labelledby="focus-title">
         <div className="content-inner">

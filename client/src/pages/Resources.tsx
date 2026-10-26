@@ -1,5 +1,7 @@
 import { BookOpen, ShieldCheck } from "lucide-react";
 import { PageIntro } from "@/components/SiteLayout";
+import PhotoGallery from "@/components/PhotoGallery";
+import { meetingPhotos } from "@/data/clubPhotos";
 
 const focusAreas = [
   "Digital Rights and Policy Regulation",
@@ -65,6 +67,14 @@ export default function Resources() {
           </div>
         </div>
       </section>
+      <PhotoGallery
+        eyebrow="Association meetings"
+        title="Learning from one another."
+        description="Two photographs from the DPGSA meeting archive."
+        photos={meetingPhotos}
+        tone="muted"
+        columns={2}
+      />
     </>
   );
 }

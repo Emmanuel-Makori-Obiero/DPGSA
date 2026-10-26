@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { ChevronRight, Pause, Play } from "lucide-react";
+import { homeHeroPhotos } from "@/data/clubPhotos";
 
 type HeroSlide = {
   avif: string;
@@ -7,23 +8,7 @@ type HeroSlide = {
   alt: string;
 };
 
-const slides: HeroSlide[] = [
-  {
-    avif: "/images/club-collaboration-jua-terms-group.avif",
-    webp: "/images/club-collaboration-jua-terms-group.webp",
-    alt: "Association members at a group photo during a JuaTerms collaboration activity.",
-  },
-  {
-    avif: "/images/club-collaboration-speaker.avif",
-    webp: "/images/club-collaboration-speaker.webp",
-    alt: "A member speaks at a JuaTerms collaboration activity.",
-  },
-  {
-    avif: "/images/club-essay-competition-award.avif",
-    webp: "/images/club-essay-competition-award.webp",
-    alt: "Students exchange an award certificate at a Data Privacy and Governance essay competition activity.",
-  },
-];
+const slides: HeroSlide[] = homeHeroPhotos;
 
 const SLIDE_INTERVAL_MS = 3000;
 
@@ -114,6 +99,7 @@ export default function HomeHeroSlider() {
           role="group"
           aria-roledescription="slide"
           aria-label={`${index + 1} of ${slides.length}`}
+          style={{ backgroundImage: `url("${slide.avif}")` }}
         >
           <picture className="home-hero-picture">
             <source srcSet={slide.avif} type="image/avif" />

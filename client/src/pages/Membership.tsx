@@ -1,5 +1,7 @@
 import { CircleCheck, ChevronRight } from "lucide-react";
 import { PageIntro } from "@/components/SiteLayout";
+import PhotoGallery from "@/components/PhotoGallery";
+import { boardGroupPhoto } from "@/data/clubPhotos";
 
 const benefits = [
   "Learn from data privacy experts",
@@ -65,6 +67,14 @@ export default function Membership() {
           </figure>
         </div>
       </section>
+      <PhotoGallery
+        eyebrow="Our community"
+        title="Join a community of learners."
+        description="Association members pictured in the group photo archive."
+        photos={[boardGroupPhoto]}
+        tone="muted"
+        columns={3}
+      />
     </>
   );
 }

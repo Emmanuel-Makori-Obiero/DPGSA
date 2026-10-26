@@ -1,4 +1,6 @@
 import { PageIntro } from "@/components/SiteLayout";
+import PhotoGallery from "@/components/PhotoGallery";
+import { essayCompetitionPhotos } from "@/data/clubPhotos";
 
 const activities = [
   {
@@ -61,6 +63,14 @@ export default function Publications() {
           </div>
         </div>
       </section>
+      <PhotoGallery
+        eyebrow="Essay-writing competition"
+        title="The community behind the ideas."
+        description="A selection of photographs from the essay-writing competition image archive shared by the Association."
+        photos={essayCompetitionPhotos}
+        tone="muted"
+        columns={4}
+      />
     </>
   );
 }

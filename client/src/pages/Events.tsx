@@ -1,5 +1,7 @@
 import { CalendarDays } from "lucide-react";
 import { PageIntro } from "@/components/SiteLayout";
+import PhotoGallery from "@/components/PhotoGallery";
+import { juaTermsPhotos } from "@/data/clubPhotos";
 
 const activities = [
   [
@@ -64,6 +66,52 @@ export default function Events() {
           </div>
         </div>
       </section>
+      <section
+        className="content-section section-muted partnership-section"
+        aria-labelledby="juaterms-partnership-title"
+      >
+        <div className="content-inner">
+          <div className="section-heading-simple">
+            <div>
+              <p className="section-kicker">Partnership</p>
+              <h2 id="juaterms-partnership-title">Working with JuaTerms.</h2>
+            </div>
+            <p className="section-intro">
+              Photos and logos from the Association’s JuaTerms collaboration.
+            </p>
+          </div>
+          <div className="partner-logo-strip" aria-label="JuaTerms logos">
+            <div className="partner-logo-card partner-logo-card-dark">
+              <img
+                src="/images/association/juaterms-logo-black.jpeg"
+                alt="JuaTerms logo on a black background."
+                width="1280"
+                height="1280"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div className="partner-logo-card partner-logo-card-light">
+              <img
+                src="/images/association/juaterms-logo-white.jpeg"
+                alt="JuaTerms logo on a white background."
+                width="1280"
+                height="1280"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <PhotoGallery
+        eyebrow="JuaTerms collaboration"
+        title="Moments from the partnership."
+        description="The group photos and speaker images are from the Association’s shared JuaTerms archive."
+        photos={juaTermsPhotos}
+        tone="muted"
+        columns={2}
+      />
     </>
   );
 }

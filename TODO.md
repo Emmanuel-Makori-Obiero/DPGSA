@@ -17,3 +17,9 @@ Keep the full Constitution and leadership/governance pages, internal role duties
 Publicly state that membership registration is open. Show the supplied poster with its KES 200 registration fee, M-Pesa Till Number 1808373, and recipient name Bora Sarah, exactly as depicted. Preserve all four poster-listed benefits, the poster’s two original association photographs, and its original design; repeat essential registration information as real accessible website text. Do not invent an application form, registration URL, additional eligibility/payment instructions, contact details, members’ names, event dates or leadership details.
 
 Keep the six public pages—Home, About, Activities, Publications, Resources and Membership—responsive, branded and synchronized across routes, metadata, Vercel rewrites, sitemap, fallback and README. Continue to support `npm run dev:static` without adding packages.
+
+## Drive club-media galleries and JuaTerms partnership
+
+Use every Association photograph from the user-shared `dpgsa.zip` and both JuaTerms logo variants. Distribute the images to all six existing public pages in context: show the Association group/meeting photographs on Home, About, Resources and Membership; feature the essay-writing competition images on Activities and Publications; and add an explicit JuaTerms partnership section with its logos and collaboration photographs on Activities. Do not leave any archive photo or logo unused, and do not add unprovided event dates, names or officer details.
+
+Fix face cropping in the carousel: preserve and display the complete photograph without cropping, center the full original aspect ratio within the hero, and use a soft blurred fill from the same image behind it for any unused area. Remove mobile object-position shifts that crop faces. Keep the current three-second interval, accessible pause/manual controls and AVIF/WebP optimization. Use lazy loading for lower-page galleries.
