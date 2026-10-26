@@ -2,17 +2,20 @@ import { useEffect, useState } from "react";
 import { ChevronRight, Pause, Play } from "lucide-react";
 
 type HeroSlide = {
-  image: string;
+  avif: string;
+  webp: string;
   alt: string;
 };
 
 const slides: HeroSlide[] = [
   {
-    image: "/images/home-slider-seminar.webp",
+    avif: "/images/home-slider-seminar.avif",
+    webp: "/images/home-slider-seminar.webp",
     alt: "Generated illustrative photo of university students taking part in a privacy and technology seminar.",
   },
   {
-    image: "/images/home-slider-campus.webp",
+    avif: "/images/home-slider-campus.avif",
+    webp: "/images/home-slider-campus.webp",
     alt: "Generated illustrative photo of students talking together on a university campus.",
   },
 ];
@@ -100,20 +103,24 @@ export default function HomeHeroSlider() {
       {slides.map((slide, index) => (
         <div
           className={`home-hero-slide${activeIndex === index ? " is-active" : ""}`}
-          key={slide.image}
+          key={slide.avif}
           aria-hidden={activeIndex !== index}
           inert={activeIndex !== index}
           role="group"
           aria-roledescription="slide"
           aria-label={`${index + 1} of ${slides.length}`}
         >
-          <img
-            className="home-hero-image"
-            src={slide.image}
-            alt={slide.alt}
-            fetchPriority={index === 0 ? "high" : "auto"}
-            loading="eager"
-          />
+          <picture className="home-hero-picture">
+            <source srcSet={slide.avif} type="image/avif" />
+            <source srcSet={slide.webp} type="image/webp" />
+            <img
+              className="home-hero-image"
+              src={slide.avif}
+              alt={slide.alt}
+              fetchPriority={index === 0 ? "high" : "auto"}
+              loading="eager"
+            />
+          </picture>
           <div className="home-hero-scrim" />
         </div>
       ))}

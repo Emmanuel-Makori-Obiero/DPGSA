@@ -13,7 +13,7 @@ export default function About() {
       <PageIntro
         eyebrow="About the Association"
         title="A student community for technology and innovation law."
-        description="The Data Privacy and Governance Students’ Association at the University of Nairobi, Parklands Campus Chapter, brings together students interested in law, data privacy, digital rights and technology."
+        description="The Data Privacy and Governance Students’ Association at the University of Nairobi brings together students interested in law, data privacy, digital rights and technology."
       />
       <section className="content-section" aria-labelledby="purpose-title">
         <div className="content-inner">

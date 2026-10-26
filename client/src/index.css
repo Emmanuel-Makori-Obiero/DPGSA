@@ -704,3 +704,15 @@ button:focus-visible, a:focus-visible, summary:focus-visible { outline: 3px soli
     transition-duration: 120ms !important;
   }
 }
+
+.home-hero-picture { position: absolute; inset: 0; display: block; }
+.focus-cards .feature-card, .activity-card { border-radius: 4px; box-shadow: 0 6px 18px rgba(24,52,79,.11); }
+.activity-card { min-width: 0; }
+.activity-card-copy { min-width: 0; flex: 1; }
+.card-learn-more { display: inline-flex; align-items: center; gap: 4px; margin-top: 12px; color: var(--blue); font-size: 12px; font-weight: 700; line-height: 1.4; text-decoration: none; }
+.card-learn-more svg { transition: transform 160ms cubic-bezier(.23,1,.32,1); }
+.card-learn-more:hover { color: var(--blue-dark); text-decoration: underline; text-underline-offset: 3px; }
+.card-learn-more:hover svg { transform: translateX(2px); }
+@media (hover: hover) and (pointer: fine) {
+  .focus-cards .feature-card:hover, .activity-card:hover { box-shadow: 0 10px 25px rgba(24,52,79,.15); }
+}

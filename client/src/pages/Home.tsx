@@ -16,26 +16,30 @@ const focusAreas = [
 ];
 
 const activities = [
-  [
-    "Moots & Debates",
-    "Annual moot competitions around legal technology areas of interest.",
-  ],
-  [
-    "Legal Trainings and Workshops",
-    "Training and workshops on data privacy and legal technology.",
-  ],
-  [
-    "Knowledge Base",
-    "Developing and maintaining Data Governance & Privacy learning materials.",
-  ],
-  [
-    "Talks, podcasts and webinars",
-    "Insights, commentary, interviews and discussions with practitioners.",
-  ],
-  [
-    "Publications and engagement",
-    "Research, digital media and community engagement on digital rights.",
-  ],
+  {
+    title: "Moots & Debates",
+    description:
+      "Annual moot competitions around legal technology areas of interest.",
+  },
+  {
+    title: "Legal Trainings and Workshops",
+    description: "Training and workshops on data privacy and legal technology.",
+  },
+  {
+    title: "Knowledge Base",
+    description:
+      "Developing and maintaining Data Governance & Privacy learning materials.",
+  },
+  {
+    title: "Talks, podcasts and webinars",
+    description:
+      "Insights, commentary, interviews and discussions with practitioners.",
+  },
+  {
+    title: "Publications and engagement",
+    description:
+      "Research, digital media and community engagement on digital rights.",
+  },
 ];
 
 export default function Home() {
@@ -87,6 +91,13 @@ export default function Home() {
               <article className="feature-card" key={title}>
                 <Icon size={34} strokeWidth={1.7} aria-hidden="true" />
                 <h3>{title}</h3>
+                <a
+                  className="card-learn-more"
+                  href="/resources#resource-focus-title"
+                  aria-label={`Learn more about ${title}`}
+                >
+                  Learn more <ChevronRight size={15} aria-hidden="true" />
+                </a>
               </article>
             ))}
           </div>
@@ -106,13 +117,20 @@ export default function Home() {
             Explore activities <ChevronRight size={14} aria-hidden="true" />
           </a>
         </div>
-        <div className="activity-list">
-          {activities.map(([title, description]) => (
+        <div className="activity-list home-activity-list">
+          {activities.map(({ title, description }) => (
             <article className="activity-card" key={title}>
               <BookOpen size={21} aria-hidden="true" />
-              <div>
+              <div className="activity-card-copy">
                 <h3>{title}</h3>
                 <p>{description}</p>
+                <a
+                  className="card-learn-more"
+                  href="/events#activities-list-title"
+                  aria-label={`Learn more about ${title}`}
+                >
+                  Learn more <ChevronRight size={15} aria-hidden="true" />
+                </a>
               </div>
             </article>
           ))}

@@ -1,6 +1,6 @@
 # DPGSA UoN public website
 
-The responsive public website for the Data Privacy and Governance Students’ Association, University of Nairobi, Parklands Campus Chapter. It presents association information and the membership-registration details from the poster supplied by the Association.
+The responsive public website for the Data Privacy and Governance Students’ Association at the University of Nairobi. It presents association information and the membership-registration details from the poster supplied by the Association.
 
 ## Public pages
 
@@ -8,7 +8,7 @@ Home (`/`), About (`/about`), Publications (`/publications`), Activities (`/even
 
 ## Homepage carousel and registration image
 
-The homepage uses a two-image carousel with generated, illustrative WebP photographs at `client/public/images/home-slider-seminar.webp` and `client/public/images/home-slider-campus.webp`. The registration page displays the original poster supplied by the user at `client/public/images/membership-registration-poster.jpeg` and repeats its payment details in accessible text.
+The homepage uses a two-image carousel with generated, illustrative photos. It serves compact 1920×1080 AVIF files first (about 63 KB and 129 KB) and retains the matching WebP files as a format fallback. The registration page displays the original poster supplied by the user at `client/public/images/membership-registration-poster.jpeg` and repeats its payment details in accessible text.
 
 ## Run with npm
 

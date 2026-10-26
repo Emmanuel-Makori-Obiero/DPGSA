@@ -45,7 +45,7 @@ export default function SiteLayout({ children, currentPath }: SiteLayoutProps) {
       <div className="utility-bar">
         <div className="utility-inner">
           <span>Nairobi, Kenya</span>
-          <span>University of Nairobi · Parklands Campus</span>
+          <span>University of Nairobi</span>
         </div>
       </div>
       <header className={`site-header${isHome ? " site-header-overlay" : ""}`}>
@@ -119,7 +119,7 @@ export default function SiteLayout({ children, currentPath }: SiteLayoutProps) {
               />
               <span className="brand-lockup">
                 <strong>DPGSA</strong>
-                <small>University of Nairobi, Parklands Campus Chapter</small>
+                <small>University of Nairobi Chapter</small>
               </span>
             </a>
             <p>
@@ -151,7 +151,7 @@ export default function SiteLayout({ children, currentPath }: SiteLayoutProps) {
         <div className="content-inner footer-bottom">
           <span>
             Data Privacy and Governance Students’ Association · University of
-            Nairobi, Parklands Campus Chapter
+            Nairobi Chapter
           </span>
           <a href="#main-content">Back to top</a>
         </div>
