@@ -1,37 +1,19 @@
 import { useEffect, useState } from "react";
-import {
-  ArrowDown,
-  ArrowLeft,
-  ArrowRight,
-  ChevronRight,
-  Pause,
-  Play,
-} from "lucide-react";
+import { ChevronRight, Pause, Play } from "lucide-react";
 
 type HeroSlide = {
   image: string;
   alt: string;
-  eyebrow: string;
-  title: string;
-  description: string;
 };
 
 const slides: HeroSlide[] = [
   {
     image: "/images/home-slider-seminar.webp",
     alt: "Generated illustrative photo of university students taking part in a privacy and technology seminar.",
-    eyebrow: "Data privacy · Digital rights · Technology law",
-    title: "The future of privacy starts with us.",
-    description:
-      "Learn, exchange ideas and grow alongside a community exploring law and technology.",
   },
   {
     image: "/images/home-slider-campus.webp",
     alt: "Generated illustrative photo of students talking together on a university campus.",
-    eyebrow: "University of Nairobi · Parklands Campus",
-    title: "Learn together. Shape a safer digital future.",
-    description:
-      "Connect with fellow students interested in data governance, digital rights and innovation law.",
   },
 ];
 
@@ -68,8 +50,9 @@ export default function HomeHeroSlider() {
       isPausedByUser ||
       isReducedMotion ||
       !isPageVisible
-    )
+    ) {
       return;
+    }
 
     const timer = window.setTimeout(() => {
       setActiveIndex(index => (index + 1) % slides.length);
@@ -85,9 +68,6 @@ export default function HomeHeroSlider() {
     isPageVisible,
   ]);
 
-  const showSlide = (index: number) => {
-    setActiveIndex((index + slides.length) % slides.length);
-  };
   const isRotationPaused =
     isHovered ||
     isFocused ||
@@ -102,9 +82,14 @@ export default function HomeHeroSlider() {
       aria-label="Data Privacy and Governance Students’ Association highlights"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      onFocus={() => {
+      onFocus={event => {
         setIsFocused(true);
-        setIsPausedByUser(true);
+        if (
+          event.target instanceof HTMLElement &&
+          event.target.matches(":focus-visible")
+        ) {
+          setIsPausedByUser(true);
+        }
       }}
       onBlur={event => {
         if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
@@ -130,87 +115,44 @@ export default function HomeHeroSlider() {
             loading="eager"
           />
           <div className="home-hero-scrim" />
-          <div className="content-inner home-hero-content">
-            <div className="home-hero-copy">
-              <p className="hero-kicker">{slide.eyebrow}</p>
-              <h1>{slide.title}</h1>
-              <p className="home-hero-description">{slide.description}</p>
-              <a className="hero-register-button" href="/membership">
-                Membership registration is open
-                <ChevronRight size={17} aria-hidden="true" />
-              </a>
-            </div>
-          </div>
         </div>
       ))}
 
-      <div className="content-inner home-hero-controls">
-        <a className="hero-scroll-link" href="#home-mission">
-          Explore the Association <ArrowDown size={15} aria-hidden="true" />
-        </a>
-        <div
-          className="hero-slider-controls"
-          role="group"
-          aria-label="Hero slider controls"
-        >
-          <span className="hero-slide-number" aria-live="off">
-            0{activeIndex + 1} <span>/ 0{slides.length}</span>
-          </span>
-          <div className="hero-slider-dots">
-            {slides.map((slide, index) => (
-              <button
-                key={slide.image}
-                className={`hero-slider-dot${activeIndex === index ? " is-active" : ""}`}
-                type="button"
-                aria-label={`Show slide ${index + 1}`}
-                aria-pressed={activeIndex === index}
-                onClick={() => showSlide(index)}
-              />
-            ))}
-          </div>
-          <button
-            className="hero-slider-toggle"
-            type="button"
-            aria-label={
-              isReducedMotion
-                ? "Automatic slide rotation is disabled because reduced motion is enabled"
-                : "Pause or resume automatic slide rotation"
-            }
-            aria-pressed={isPausedByUser || isReducedMotion}
-            disabled={isReducedMotion}
-            onClick={() => setIsPausedByUser(paused => !paused)}
-          >
-            {isPausedByUser ? (
-              <Play size={16} aria-hidden="true" />
-            ) : (
-              <Pause size={16} aria-hidden="true" />
-            )}
-          </button>
-          <button
-            className="hero-slider-arrow"
-            type="button"
-            aria-label="Previous slide"
-            onClick={() => showSlide(activeIndex - 1)}
-          >
-            <ArrowLeft size={18} aria-hidden="true" />
-          </button>
-          <button
-            className="hero-slider-arrow"
-            type="button"
-            aria-label="Next slide"
-            onClick={() => showSlide(activeIndex + 1)}
-          >
-            <ArrowRight size={18} aria-hidden="true" />
-          </button>
-        </div>
+      <div className="content-inner home-hero-content">
+        <h1>Learn | Engage | Build a safer digital future.</h1>
       </div>
-      <div className="hero-progress-track" aria-hidden="true">
-        {!isReducedMotion && isPageVisible && (
-          <span
-            className="hero-progress-indicator"
-            key={`${activeIndex}-${isHovered}-${isFocused}-${isPausedByUser}-${isPageVisible}`}
-          />
-        )}
+
+      <div
+        className="hero-slider-controls"
+        role="group"
+        aria-label="Hero image controls"
+      >
+        <button
+          className="hero-slider-toggle visually-hidden-control"
+          type="button"
+          aria-label={
+            isReducedMotion
+              ? "Automatic slide rotation is disabled because reduced motion is enabled"
+              : "Pause or resume automatic slide rotation"
+          }
+          aria-pressed={isPausedByUser || isReducedMotion}
+          disabled={isReducedMotion}
+          onClick={() => setIsPausedByUser(paused => !paused)}
+        >
+          {isPausedByUser ? (
+            <Play size={16} aria-hidden="true" />
+          ) : (
+            <Pause size={16} aria-hidden="true" />
+          )}
+        </button>
+        <button
+          className="hero-slider-next"
+          type="button"
+          aria-label="Show next hero image"
+          onClick={() => setActiveIndex(index => (index + 1) % slides.length)}
+        >
+          <ChevronRight size={30} strokeWidth={1.5} aria-hidden="true" />
+        </button>
       </div>
     </section>
   );

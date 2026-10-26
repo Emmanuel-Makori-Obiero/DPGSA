@@ -5,8 +5,8 @@ const navigation = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
   { label: "Activities", href: "/events" },
-  { label: "Publications", href: "/publications" },
   { label: "Resources", href: "/resources" },
+  { label: "Publications", href: "/publications" },
   { label: "Membership", href: "/membership" },
 ];
 
@@ -44,8 +44,8 @@ export default function SiteLayout({ children, currentPath }: SiteLayoutProps) {
       </a>
       <div className="utility-bar">
         <div className="utility-inner">
+          <span>Nairobi, Kenya</span>
           <span>University of Nairobi · Parklands Campus</span>
-          <span>Data privacy · Governance · Digital rights</span>
         </div>
       </div>
       <header className={`site-header${isHome ? " site-header-overlay" : ""}`}>
