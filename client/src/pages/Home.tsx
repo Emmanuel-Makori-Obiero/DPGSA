@@ -79,11 +79,13 @@ export default function Home() {
       </section>
 
       <PhotoGallery
+        id="association-moments"
         eyebrow="Association moments"
         title="Learning and meeting together."
         description="A few moments from DPGSA meetings and essay-competition activities."
         photos={[meetingPhotos[0], meetingPhotos[1], essayCompetitionPhotos[1]]}
         tone="muted"
+        mobileColumns={1}
       />
 
       <section className="about-band" aria-labelledby="focus-title">

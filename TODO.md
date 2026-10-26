@@ -27,7 +27,7 @@ Give homepage focus, activity and gallery cards a noticeable, accessible pale-bl
 
 ## Responsive layout
 
-- [x] At phone widths, let the homepage photography fill most of the first screen, with the portrait meeting image full width and two supporting photos below; keep faces visible, the headline readable and the next control clear of both faces and copy. Use mobile navigation links at least 44px high, and stack section headings and descriptions at tablet widths where side-by-side columns become cramped.
+- [x] At phone widths, restore the compact three-photo carousel mosaic, with the portrait meeting photo beside the two supporting images. Keep only the Association Moments gallery full content width; keep other photo galleries in two columns and preserve each image’s full aspect ratio. Keep the headline readable, the next control clear of faces and copy, mobile navigation links at least 44px high, and stack section headings and descriptions at tablet widths where side-by-side columns become cramped.
 
 ## Existing media and registration
 

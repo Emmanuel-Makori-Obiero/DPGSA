@@ -8,6 +8,7 @@ type PhotoGalleryProps = {
   photos: readonly ClubPhoto[];
   tone?: "plain" | "muted";
   columns?: 2 | 3 | 4;
+  mobileColumns?: 1 | 2;
 };
 
 export default function PhotoGallery({
@@ -18,6 +19,7 @@ export default function PhotoGallery({
   photos,
   tone = "plain",
   columns = 3,
+  mobileColumns = 2,
 }: PhotoGalleryProps) {
   return (
     <section
@@ -36,6 +38,7 @@ export default function PhotoGallery({
         <div
           className="photo-gallery-grid"
           data-columns={columns}
+          data-mobile-columns={mobileColumns}
           role="list"
           aria-label={title}
         >

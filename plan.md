@@ -12,7 +12,7 @@ Add the supplied DPGSA LinkedIn and Instagram links to the footer. Give feature,
 
 Keep route-level pages in `client/src/pages/`, DPGSA-owned layout and media components in `client/src/components/site/`, reusable interface primitives in `client/src/components/ui/`, and photo metadata/headlines in `client/src/data/`. Keep route metadata in `routes.tsx` and document that Vercel uses static prerendering while `server/`, `shared/` and `drizzle/` remain for the optional Express/Docker target.
 
-At phone widths, let the homepage photography fill most of the first screen: show the portrait auditorium photo as a large full-width image with the two supporting photos in a broad strip below it. Preserve the photo’s faces, keep the headline in a readable two-line measure and position the next control away from faces and copy. Keep mobile navigation links at least 44px high. Stack section headings and their descriptions at tablet widths when the two-column layout makes either column cramped.
+At phone widths, use the compact three-photo homepage mosaic: keep the portrait auditorium photo beside the two supporting photos. Reserve a full-content-width phone gallery for Association Moments; keep other photo galleries in two columns. Preserve image aspect ratios, keep the headline readable and position the next control away from faces and copy. Keep mobile navigation links at least 44px high. Stack section headings and their descriptions at tablet widths when the two-column layout makes either column cramped.
 
 ## Sources for the privacy page
 
