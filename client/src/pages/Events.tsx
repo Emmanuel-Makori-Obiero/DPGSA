@@ -1,45 +1,64 @@
+import { CalendarDays } from "lucide-react";
 import { PageIntro } from "@/components/SiteLayout";
 
-const events = [
-  {
-    type: "DEMO EVENT",
-    date: "Sample date: 12 November 2026",
-    title: "Privacy in practice: a student roundtable",
-    detail: "A fictional event example for reviewing the page layout. No registration is available.",
-  },
-  {
-    type: "DEMO ANNOUNCEMENT",
-    date: "Sample date: 03 November 2026",
-    title: "Call for student voices on responsible AI",
-    detail: "A fictional opportunity card, not an open call from DPGSA.",
-  },
-  {
-    type: "DEMO ACTIVITY",
-    date: "Sample date: 18 September 2026",
-    title: "Data, rights and society: a campus conversation",
-    detail: "A sample activity recap, not a verified DPGSA event or achievement.",
-  },
+const activities = [
+  [
+    "Moots & Debates",
+    "Annual moot competitions around legal technology areas of interest.",
+  ],
+  [
+    "Legal Trainings and Workshops",
+    "Regular training and workshops around legal technology areas of interest.",
+  ],
+  [
+    "Power Talks and practitioner insights",
+    "Insights, commentary and Q&A sessions with data privacy practitioners.",
+  ],
+  [
+    "Podcasts and webinars",
+    "Podcasts and webinars on data privacy and governance.",
+  ],
+  [
+    "Community engagement",
+    "Digital media and community engagement on digital rights and law-tech.",
+  ],
+  [
+    "Mobilization and stakeholder engagement",
+    "Community engagement and advocacy for legal and regulatory reform in data governance and privacy.",
+  ],
 ];
 
 export default function Events() {
   return (
     <>
       <PageIntro
-        eyebrow="Events and activities"
-        title="Conversations that bring ideas to life."
-        description="See how upcoming events, announcements and past activities could be presented. All entries on this demo page are fictional examples."
+        eyebrow="Activities"
+        title="Learning, discussion and community engagement."
+        description="Explore the Association’s programme areas in legal technology, data privacy and digital rights."
       />
-      <section className="content-section" aria-labelledby="events-list-title">
+      <section
+        className="content-section"
+        aria-labelledby="activities-list-title"
+      >
         <div className="content-inner">
           <div className="section-heading-simple">
-            <div><p className="section-label">What is happening</p><h2 id="events-list-title">Sample events and updates</h2></div>
-            <p className="section-intro">No event registration, opportunity or achievement shown here is official. Confirmed details and approved event photos can replace these samples.</p>
+            <div>
+              <p className="section-label">What we do</p>
+              <h2 id="activities-list-title">Learning and engagement</h2>
+            </div>
+            <p className="section-intro">
+              Explore the kinds of activities offered by the Association.
+              Specific event dates are not listed here.
+            </p>
           </div>
-          <div className="event-list">
-            {events.map((event) => (
-              <article className="event-row" key={event.title}>
-                <div className="event-meta"><span className="sample-label">{event.type}</span><time>{event.date}</time></div>
-                <div><h3>{event.title}</h3><p>{event.detail}</p></div>
+          <div className="activity-list">
+            {activities.map(([title, detail]) => (
+              <article className="activity-card" key={title}>
+                <CalendarDays size={21} aria-hidden="true" />
+                <div>
+                  <h3>{title}</h3>
+                  <p>{detail}</p>
+                </div>
               </article>
             ))}
           </div>

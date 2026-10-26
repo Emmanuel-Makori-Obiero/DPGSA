@@ -1,37 +1,22 @@
-# DPGSA UoN Homepage — TODO
+# DPGSA UoN — Public registration site
 
-## Draft status
-The homepage is a photo-led layout demo, not the final official site. Sample articles, events, resources and copy remain visibly identified as demo material. Student stock photos are illustrative only and are not DPGSA members or association activities. TypeScript checking and the static build must pass for this revision. The user's logo, final brand guidance and verified association content are still pending.
+## Hide internal governance material
 
-## Public homepage introduction and navigation — demo draft implemented
-- The Home Page shall include an introduction to DPGSA UoN and its mission, vision or a concise statement of the association's purpose.
-- The homepage shall provide a concise overview of the association and its role without inventing organizational facts or affiliation claims. Any demo copy must be visibly identified as sample copy.
-- The homepage shall include responsive public navigation that previews the planned public information architecture while keeping all non-homepage pages out of this milestone.
-- The page shall be responsive for mobile phones, tablets and desktop devices, with accessible navigation, readable typography and appropriate colour contrast.
+- Remove the full Constitution from all public routes, navigation, footer links, initial-page metadata, route declarations, sitemap and Vercel clean-URL rewrites. Remove the full constitutional text module and Constitution page from the current source tree.
+- Remove the public leadership/governance page, named officer-role list, leader duties and succession/vacancy details. Do not repackage them as summaries on another page.
+- Remove the membership-removal, application-rejection and appeal provisions, and internal membership-record handling, from all public site pages.
+- Remove internal notices, Secretariat duties, and every public link or explanatory copy that directs readers to the Constitution.
 
-## Visual direction and photography carousel — revised to match user feedback
-- The user said the page looked "too ai with the dots and dashes and themes and lack of photos"; simplify the visual style and remove ornamental dot, orbit and dashed motifs.
-- Use a conventional association-homepage structure inspired by the user's FALAS.org reference, including a working photo carousel with visible previous/next controls and an image count.
-- Use genuine photos, with clear source credits. Any stock student photos must be identified as illustrative and must not imply they depict DPGSA members or real association events.
-- Keep the persistent demo notice and do not substitute stock photography for official association photos when those are provided.
+## Membership registration and imagery
 
-## Homepage publications and verified content — demo cards implemented; official content pending
-- The Home Page shall include featured articles and recent publications.
-- The current example titles, summaries, dates and byline are fictional layout samples, visibly labeled DEMO; they must not be represented as published DPGSA material.
-- Where official Medium details are supplied, surface a homepage-level Medium integration or link. The full articles may open on Medium in the initial implementation.
-- Replace fictional demo material with verified entries only. News, publications, events, announcements, activities and achievements shall be populated only with confirmed information.
+- Publicly state that membership registration is now open, as shown in the supplied poster.
+- Present the poster’s registration fee of KES 200, M-Pesa Till Number 1808373, and recipient name Bora Sarah exactly as shown.
+- Include the four benefits shown on the poster: learn from data privacy experts; build skills for law, tech & policy; network with peers & professionals; and know your digital rights in Kenya.
+- Include the full user-supplied registration poster, preserving its two association photographs and its original design. Provide useful alt text and repeat essential registration information as real page text.
+- Do not invent an application form or registration URL, additional eligibility or payment instructions, contact details, members’ names, event dates or leadership details.
 
-## Events, announcements, activities and resources — demo cards implemented; verified data pending
-- The Home Page shall include upcoming events and association announcements.
-- The Home Page shall include a showcase for recent activities and achievements using approved descriptions and media.
-- Fictional sample events, announcements, activities and resources are visibly labeled as demo data and have no active registration or external resource links. Replace with approved details and media before launch.
-- Resource content shall link only to approved, properly attributed resources when those are provided.
+## Remaining public pages and release
 
-## Homepage calls to action, footer and contact channels — demo placeholders implemented
-- The Home Page shall provide clear routes toward membership registration, resources and learning, and contact or engagement. These destinations are future work; links must be non-functional or clearly marked until their pages or official channels exist.
-- The footer shall use only verified association identity, University of Nairobi relationship wording, social links and contact details. Omit missing/unverified details rather than inventing them. Any contact placeholder must clearly state it is not real.
-- Do not build non-homepage routes, executive/member dashboards, authentication, membership applications, payments or other secure workflows in this milestone.
-
-## Approved branding and completion details — blocked on user input
-- Use only approved DPGSA branding. The official logo, approved colours or brand guidance, and missing copy, links, imagery and verified content must be requested before the homepage is treated as finished.
-- The current wordmark and palette are provisional. Demo articles, dates, events, announcements, activity highlights, resources, contact placeholders and any sample imagery must be replaced or removed once official materials are provided.
+- Keep the public site’s existing mission, vision, focus areas, activities, publications and learning-resource information without mentioning or linking to the private Constitution or internal role duties.
+- Synchronize the clean route registry, route-specific titles/descriptions and canonicals, Vercel rewrites, sitemap, fallback, README and image credits with the reduced public route set.
+- Keep the existing responsive, keyboard-accessible layout and official association branding.

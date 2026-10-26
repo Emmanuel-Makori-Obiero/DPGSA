@@ -1,180 +1,170 @@
-import { useEffect, useState } from "react";
-import { BookOpen, CalendarDays, ChevronRight, Scale, ShieldCheck, Users } from "lucide-react";
+import {
+  BookOpen,
+  ChevronRight,
+  Globe,
+  Landmark,
+  Scale,
+  ShieldCheck,
+} from "lucide-react";
 
-const managedHeroBackground = "/manus-storage/async-images/oav0JbW3LOmswCYOxrk2hs/image-1.webp";
-
-const focusCards = [
-  {
-    icon: Users,
-    title: "Community and research",
-    description: "Build a network of students interested in privacy, data protection and digital governance.",
-  },
-  {
-    icon: Scale,
-    title: "Professionalism and ethics",
-    description: "Consider the standards and responsibilities that guide the handling of personal data.",
-  },
-  {
-    icon: BookOpen,
-    title: "Knowledge and advocacy",
-    description: "Share accessible learning and encourage informed conversations about digital rights.",
-  },
+const focusAreas = [
+  { icon: Scale, title: "Digital Rights and Policy Regulation" },
+  { icon: ShieldCheck, title: "Cybercrimes & Digital Fraud" },
+  { icon: Globe, title: "Internet Governance" },
+  { icon: Landmark, title: "Law and contemporary technologies" },
 ];
 
-const webinars = [
-  {
-    date: "12 NOV 2026",
-    title: "Privacy in practice",
-    text: "A sample student conversation on everyday data protection.",
-  },
-  {
-    date: "20 NOV 2026",
-    title: "Understanding responsible AI",
-    text: "A sample webinar card for a future DPGSA learning session.",
-  },
-  {
-    date: "28 NOV 2026",
-    title: "Digital rights and public life",
-    text: "An illustrative listing for a discussion about governance and rights.",
-  },
-];
-
-const news = [
-  {
-    dateDay: "12",
-    dateMonth: "NOV",
-    image: "/images/student-working.jpg",
-    alt: "A student working at a laptop in a library.",
-    title: "What should students know about personal data?",
-    link: "/publications",
-  },
-  {
-    dateDay: "08",
-    dateMonth: "NOV",
-    image: null,
-    alt: "",
-    title: "A sample introduction to privacy by design",
-    link: "/publications",
-  },
-  {
-    dateDay: "02",
-    dateMonth: "NOV",
-    image: "/images/study-group.jpg",
-    alt: "Students studying together in a library.",
-    title: "Building responsible digital habits",
-    link: "/resources",
-  },
+const activities = [
+  [
+    "Moots & Debates",
+    "Annual moot competitions around legal-technology interests.",
+  ],
+  [
+    "Legal Trainings and Workshops",
+    "Training and workshops on data privacy and legal technology.",
+  ],
+  [
+    "Knowledge Base",
+    "Developing and maintaining Data Governance & Privacy learning materials.",
+  ],
+  [
+    "Talks, podcasts and webinars",
+    "Insights, commentary, interviews and discussions with practitioners.",
+  ],
+  [
+    "Publications and engagement",
+    "Research, digital media and community engagement on digital rights.",
+  ],
 ];
 
 export default function Home() {
-  const [useManagedHero, setUseManagedHero] = useState(false);
-
-  useEffect(() => {
-    if (!window.location.hostname.endsWith("vercel.app")) setUseManagedHero(true);
-  }, []);
-
   return (
     <>
-      <section className="reference-hero" style={useManagedHero ? { backgroundImage: `url("${managedHeroBackground}"), url("/images/dpgsa-network-background.svg")` } : undefined} aria-labelledby="hero-title">
+      <section className="reference-hero" aria-labelledby="hero-title">
         <div className="reference-hero-overlay" />
         <div className="reference-hero-content">
-          <p className="hero-kicker">Data Protection and Governance Students Association</p>
-          <h1 id="hero-title">Building a culture of privacy and trust</h1>
-          <p>Exploring responsible data use, digital governance and rights at the University of Nairobi.</p>
-          <a className="blue-button" href="/about">Learn more <ChevronRight size={15} aria-hidden="true" /></a>
+          <p className="hero-kicker">
+            Data Privacy and Governance Students’ Association · University of
+            Nairobi, Parklands Campus Chapter
+          </p>
+          <h1 id="hero-title">
+            Nurturing the next generation of technology and innovation law
+            practitioners.
+          </h1>
+          <p>
+            Explore data privacy, digital rights and legal technology with the
+            University of Nairobi student community.
+          </p>
+          <a className="blue-button" href="/membership">
+            Membership registration is open{" "}
+            <ChevronRight size={15} aria-hidden="true" />
+          </a>
         </div>
-        <span className="hero-demo-tag">Illustrative demo content</span>
       </section>
 
-      <section className="mission-section content-inner" aria-labelledby="mission-title">
+      <section
+        className="mission-section content-inner"
+        aria-labelledby="mission-title"
+      >
         <div className="mission-art">
           <div className="mission-art-blue" />
-          <img src="/images/uon-entrance.jpg" alt="University of Nairobi entrance building." loading="lazy" />
+          <img
+            src="/images/uon-entrance.jpg"
+            alt="University of Nairobi entrance building."
+            loading="lazy"
+          />
         </div>
         <div className="mission-copy">
           <p className="section-kicker">Our mission</p>
-          <h2 id="mission-title">Protecting information through responsible data use.</h2>
-          <p className="mission-description">The website brief describes DPGSA UoN as a student association focused on data protection and governance. This draft introduces those themes while the official mission wording awaits approval.</p>
-          <ul className="check-list">
-            <li><ShieldCheck size={19} aria-hidden="true" /><span>Privacy and responsible data use</span></li>
-            <li><ShieldCheck size={19} aria-hidden="true" /><span>Digital governance and policy</span></li>
-            <li><ShieldCheck size={19} aria-hidden="true" /><span>Learning, discussion and advocacy</span></li>
-          </ul>
-          <a className="blue-button" href="/about">Learn more <ChevronRight size={15} aria-hidden="true" /></a>
+          <h2 id="mission-title">
+            To nurture the next generation of practitioners and experts in the
+            area of technology and innovation law.
+          </h2>
+          <p className="mission-description">
+            Connect with people learning about data privacy, governance and the
+            relationship between law and technology.
+          </p>
+          <a className="blue-button" href="/about">
+            About the Association <ChevronRight size={15} aria-hidden="true" />
+          </a>
         </div>
       </section>
 
-      <section className="about-band" aria-labelledby="about-us-title">
+      <section className="about-band" aria-labelledby="focus-title">
         <div className="content-inner">
           <header className="center-section-heading">
-            <p className="section-kicker">Who we are</p>
-            <h2 id="about-us-title">About us</h2>
-            <p>A student community exploring data protection, privacy and governance in Kenya.</p>
+            <p className="section-kicker">Our areas of interest</p>
+            <h2 id="focus-title">Focus areas</h2>
+            <p>
+              Explore the intersections of law, data privacy and emerging
+              technology.
+            </p>
           </header>
-          <div className="feature-cards">
-            {focusCards.map(({ icon: Icon, title, description }) => (
+          <div className="feature-cards focus-cards">
+            {focusAreas.map(({ icon: Icon, title }) => (
               <article className="feature-card" key={title}>
-                <Icon size={37} strokeWidth={1.7} aria-hidden="true" />
+                <Icon size={34} strokeWidth={1.7} aria-hidden="true" />
                 <h3>{title}</h3>
-                <p>{description}</p>
               </article>
             ))}
           </div>
-          <div className="center-action"><a className="blue-button" href="/about">Learn more <ChevronRight size={15} aria-hidden="true" /></a></div>
         </div>
       </section>
 
-      <section className="webinars-section content-inner" aria-labelledby="webinars-title">
+      <section
+        className="webinars-section content-inner"
+        aria-labelledby="activities-title"
+      >
         <div className="section-heading-row">
-          <div><p className="section-kicker">Learn and take part</p><h2 id="webinars-title">Webinars</h2></div>
-          <a className="text-button" href="/events">All events <ChevronRight size={14} aria-hidden="true" /></a>
+          <div>
+            <p className="section-kicker">Learning and engagement</p>
+            <h2 id="activities-title">Activities</h2>
+          </div>
+          <a className="text-button" href="/events">
+            Explore activities <ChevronRight size={14} aria-hidden="true" />
+          </a>
         </div>
-        <div className="webinar-cards">
-          {webinars.map((webinar) => (
-            <article className="webinar-card" key={webinar.title}>
-              <div className="webinar-icon" aria-hidden="true"><CalendarDays size={26} strokeWidth={1.5} /></div>
-              <div className="webinar-copy">
-                <span className="demo-label">Demo listing</span>
-                <p className="webinar-date"><CalendarDays size={13} aria-hidden="true" />{webinar.date}</p>
-                <h3>{webinar.title}</h3>
-                <p>{webinar.text}</p>
+        <div className="activity-list">
+          {activities.map(([title, description]) => (
+            <article className="activity-card" key={title}>
+              <BookOpen size={21} aria-hidden="true" />
+              <div>
+                <h3>{title}</h3>
+                <p>{description}</p>
               </div>
             </article>
           ))}
         </div>
-        <p className="demo-footnote">Webinar titles and dates are examples only. No event registration is active.</p>
       </section>
 
-      <section className="latest-section" aria-labelledby="latest-title">
-        <div className="content-inner">
-          <header className="center-section-heading">
-            <p className="section-kicker">What is happening</p>
-            <h2 id="latest-title">Latest news</h2>
-            <p>Sample stories for the DPGSA UoN homepage.</p>
-          </header>
-          <div className="news-cards">
-            {news.map((story) => (
-              <article className="news-card" key={story.title}>
-                <a className="news-image-link" href={story.link} aria-label={`Read more: ${story.title}`}>
-                  {story.image ? <img src={story.image} alt={story.alt} loading="lazy" /> : <span className="news-image-placeholder" aria-hidden="true"><ShieldCheck size={48} strokeWidth={1.4} /></span>}
-                  <span className="news-date"><strong>{story.dateDay}</strong><small>{story.dateMonth}</small></span>
-                </a>
-                <div className="news-copy">
-                  <span className="demo-label">Sample story</span>
-                  <h3>{story.title}</h3>
-                  <a className="read-more" href={story.link}>Read more <ChevronRight size={13} aria-hidden="true" /></a>
-                </div>
-              </article>
-            ))}
+      <section className="latest-section" aria-labelledby="vision-title">
+        <div className="content-inner vision-block">
+          <div>
+            <p className="section-kicker">Our vision</p>
+            <h2 id="vision-title">
+              A global network of young Data Privacy &amp; Governance
+              enthusiasts.
+            </h2>
           </div>
-          <div className="center-action"><a className="blue-button" href="/publications">View publications <ChevronRight size={15} aria-hidden="true" /></a></div>
+          <blockquote>
+            “To create a global network of young Data Privacy &amp; Governance
+            enthusiasts across this educational institution and provide
+            information, education, peer connections, and career support to the
+            community to help them kickstart their law tech journey.”
+          </blockquote>
         </div>
       </section>
 
       <section className="home-join">
         <div className="content-inner home-join-inner">
-          <div><p className="section-kicker">Get involved</p><h2>Learn more about DPGSA.</h2></div>
-          <a className="blue-button" href="/membership">Membership information <ChevronRight size={15} aria-hidden="true" /></a>
+          <div>
+            <p className="section-kicker">Membership</p>
+            <h2>Registration is now open.</h2>
+          </div>
+          <a className="blue-button" href="/membership">
+            View registration details{" "}
+            <ChevronRight size={15} aria-hidden="true" />
+          </a>
         </div>
       </section>
     </>

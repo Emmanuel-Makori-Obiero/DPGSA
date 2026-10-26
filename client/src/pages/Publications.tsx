@@ -1,26 +1,17 @@
 import { PageIntro } from "@/components/SiteLayout";
 
-const articles = [
+const activities = [
   {
-    category: "DEMO ARTICLE",
-    topic: "Privacy",
-    title: "Privacy by design: a better starting point for student projects",
-    summary: "A sample feature about considering privacy before a project begins.",
-    date: "Sample date: 12 November 2026",
+    title: "Data Governance blogs, journals & magazines",
+    text: "Share writing and commentary on data governance and privacy.",
   },
   {
-    category: "DEMO ARTICLE",
-    topic: "AI governance",
-    title: "Who is accountable when automated decisions go wrong?",
-    summary: "A sample editorial about transparency, oversight and responsibility.",
-    date: "Sample date: 28 October 2026",
+    title: "Research materials",
+    text: "Develop and publish research on Data Governance and Privacy issues.",
   },
   {
-    category: "DEMO ARTICLE",
-    topic: "Digital rights",
-    title: "What does meaningful consent look like online?",
-    summary: "A fictional article card to show how student perspectives could appear.",
-    date: "Sample date: 04 October 2026",
+    title: "Knowledge-based materials",
+    text: "Create learning materials that help members and experts exchange knowledge and experiences across Africa.",
   },
 ];
 
@@ -28,24 +19,45 @@ export default function Publications() {
   return (
     <>
       <PageIntro
-        eyebrow="Publications"
-        title="Ideas worth sharing."
-        description="A home for articles, explainers and student perspectives on data protection and governance. The entries shown here are fictional samples."
+        eyebrow="Research and publications"
+        title="Research, commentary and shared knowledge."
+        description="Explore the Association’s interests in writing, research and knowledge-sharing on Data Governance and Privacy."
       />
-      <section className="content-section" aria-labelledby="publications-list-title">
+      <section
+        className="content-section"
+        aria-labelledby="publication-activities-title"
+      >
         <div className="content-inner">
           <div className="section-heading-simple">
-            <div><p className="section-label">Latest writing</p><h2 id="publications-list-title">Sample articles</h2></div>
-            <p className="section-intro">The official Medium page and verified publication links have not been supplied. These examples are not published DPGSA work.</p>
+            <div>
+              <p className="section-label">Research and publication</p>
+              <h2 id="publication-activities-title">Knowledge in practice</h2>
+            </div>
+            <p className="section-intro">
+              This page describes publication areas; it does not list unverified
+              article titles or publication dates.
+            </p>
           </div>
-          <div className="publication-list">
-            {articles.map((article) => (
-              <article className="publication-row" key={article.title}>
-                <div className="publication-category"><span className="sample-label">{article.category}</span><span>{article.topic}</span></div>
-                <div><h3>{article.title}</h3><p>{article.summary}</p></div>
-                <time>{article.date}</time>
+          <div className="activity-list">
+            {activities.map(({ title, text }) => (
+              <article className="activity-card" key={title}>
+                <h3>{title}</h3>
+                <p>{text}</p>
               </article>
             ))}
+          </div>
+          <div className="publication-purpose">
+            <h2>Research and policy interests</h2>
+            <ul>
+              <li>Build research strategy and activities</li>
+              <li>Share research on data governance and privacy</li>
+              <li>
+                Raise awareness of developments in data governance and privacy
+              </li>
+              <li>
+                Work with relevant stakeholders on strong privacy frameworks
+              </li>
+            </ul>
           </div>
         </div>
       </section>

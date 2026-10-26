@@ -1,1 +1,10 @@
-{"routes":[{"path":"/","title":"DPGSA UoN Home"},{"path":"/about","title":"About DPGSA UoN"},{"path":"/leadership","title":"Leadership"},{"path":"/publications","title":"Publications"},{"path":"/events","title":"Events and Activities"},{"path":"/resources","title":"Resources and Learning"},{"path":"/membership","title":"Membership"},{"path":"/contact","title":"Contact"}]}
+{
+  "routes": [
+    { "path": "/", "title": "DPGSA UoN Home" },
+    { "path": "/about", "title": "About the Association" },
+    { "path": "/publications", "title": "Research and Publications" },
+    { "path": "/events", "title": "Activities" },
+    { "path": "/resources", "title": "Resources and Learning" },
+    { "path": "/membership", "title": "Membership Registration" }
+  ]
+}
