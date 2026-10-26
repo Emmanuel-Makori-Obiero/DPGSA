@@ -12,6 +12,8 @@ Add the supplied DPGSA LinkedIn and Instagram links to the footer. Give feature,
 
 Keep route-level pages in `client/src/pages/`, DPGSA-owned layout and media components in `client/src/components/site/`, reusable interface primitives in `client/src/components/ui/`, and photo metadata/headlines in `client/src/data/`. Keep route metadata in `routes.tsx` and document that Vercel uses static prerendering while `server/`, `shared/` and `drizzle/` remain for the optional Express/Docker target.
 
+At phone widths, give the three-photo homepage mosaic enough vertical space for its portrait auditorium image and two supporting photos, keep the headline in a readable two-line measure and position the next control away from faces and copy. Keep mobile navigation links at least 44px high. Stack section headings and their descriptions at tablet widths when the two-column layout makes either column cramped.
+
 ## Sources for the privacy page
 
 The Kenya Data Protection Act, 2019 section 26 lists the rights to be informed, access personal data, object to all or part of processing, correct false or misleading data and delete false or misleading data. Section 29 covers information that should be given when personal data is collected. Primary links: [Kenya Law](https://new.kenyalaw.org/akn/ke/act/2019/24/eng@2022-12-31) and [ODPC rights of a data subject](https://www.odpc.go.ke/rights-of-a-data-subject/).

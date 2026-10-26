@@ -25,6 +25,10 @@ Give homepage focus, activity and gallery cards a noticeable, accessible pale-bl
 
 - [x] Keep active DPGSA components separate from reusable UI primitives, remove only starter components verified to have no application imports, and document the source layout plus npm/Vercel build workflows.
 
+## Responsive layout
+
+- [x] Keep the homepage mosaic and headline legible at phone widths, keep carousel controls clear of faces and copy, use touch-friendly mobile navigation links, and stack page-section headings and descriptions at tablet widths where side-by-side columns become cramped.
+
 ## Existing media and registration
 
 Continue to use the Association photo archive on relevant pages, with accurate alt text and no invented event dates, names or officer details. Keep the supplied registration poster and show its registration fee KES 200, M-Pesa Till Number 1808373 and recipient name Bora Sarah. Do not invent an application form or additional payment instructions.
