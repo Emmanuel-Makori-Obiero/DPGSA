@@ -143,7 +143,7 @@ export const homeHeroPhotos = [
     alt: "A participant speaks during a JuaTerms collaboration event.",
   },
   {
-    ...essayCompetitionPhotos[1],
-    alt: "Participants share a moment at the Association's essay-writing competition.",
+    ...juaTermsPhotos[2],
+    alt: "Association members and JuaTerms participants gathered together.",
   },
 ] satisfies ClubPhoto[];

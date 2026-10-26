@@ -1,6 +1,7 @@
 import type { ClubPhoto } from "@/data/clubPhotos";
 
 type PhotoGalleryProps = {
+  id?: string;
   eyebrow: string;
   title: string;
   description?: string;
@@ -10,6 +11,7 @@ type PhotoGalleryProps = {
 };
 
 export default function PhotoGallery({
+  id,
   eyebrow,
   title,
   description,
@@ -19,6 +21,7 @@ export default function PhotoGallery({
 }: PhotoGalleryProps) {
   return (
     <section
+      id={id}
       className={`content-section photo-gallery-section${tone === "muted" ? " section-muted" : ""}`}
       aria-label={title}
     >

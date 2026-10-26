@@ -1,4 +1,4 @@
-import { CalendarDays } from "lucide-react";
+import { ArrowRight, CalendarDays } from "lucide-react";
 import { PageIntro } from "@/components/SiteLayout";
 import PhotoGallery from "@/components/PhotoGallery";
 import { juaTermsPhotos } from "@/data/clubPhotos";
@@ -67,47 +67,36 @@ export default function Events() {
         </div>
       </section>
       <section
-        className="content-section section-muted partnership-section"
+        className="partnership-feature"
         aria-labelledby="juaterms-partnership-title"
       >
-        <div className="content-inner">
-          <div className="section-heading-simple">
-            <div>
-              <p className="section-kicker">Partnership</p>
-              <h2 id="juaterms-partnership-title">Working with JuaTerms.</h2>
-            </div>
-            <p className="section-intro">
-              Photos and logos from the Association’s JuaTerms collaboration.
-            </p>
+        <div className="content-inner partnership-feature-inner">
+          <div className="partnership-copy">
+            <p className="partnership-eyebrow">Association partnership</p>
+            <h2 id="juaterms-partnership-title">Working with JuaTerms</h2>
+            <p>A few moments from our collaboration.</p>
+            <a className="partnership-gallery-link" href="#juaterms-moments">
+              See the photos <ArrowRight size={17} aria-hidden="true" />
+            </a>
           </div>
-          <div className="partner-logo-strip" aria-label="JuaTerms logos">
-            <div className="partner-logo-card partner-logo-card-dark">
-              <img
-                src="/images/association/juaterms-logo-black.jpeg"
-                alt="JuaTerms logo on a black background."
-                width="1280"
-                height="1280"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            <div className="partner-logo-card partner-logo-card-light">
-              <img
-                src="/images/association/juaterms-logo-white.jpeg"
-                alt="JuaTerms logo on a white background."
-                width="1280"
-                height="1280"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-          </div>
+          <figure className="partnership-logo">
+            <img
+              src="/images/association/juaterms-logo-white.jpeg"
+              alt="JuaTerms"
+              width="1280"
+              height="1280"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>JuaTerms</figcaption>
+          </figure>
         </div>
       </section>
       <PhotoGallery
-        eyebrow="JuaTerms collaboration"
-        title="Moments from the partnership."
-        description="The group photos and speaker images are from the Association’s shared JuaTerms archive."
+        id="juaterms-moments"
+        eyebrow="JuaTerms"
+        title="A few moments together."
+        description="Photos from the Association’s collaboration with JuaTerms."
         photos={juaTermsPhotos}
         tone="muted"
         columns={2}

@@ -9,7 +9,6 @@ type HeroSlide = {
 };
 
 const slides: HeroSlide[] = homeHeroPhotos;
-
 const SLIDE_INTERVAL_MS = 3000;
 
 export default function HomeHeroSlider() {
@@ -99,7 +98,6 @@ export default function HomeHeroSlider() {
           role="group"
           aria-roledescription="slide"
           aria-label={`${index + 1} of ${slides.length}`}
-          style={{ backgroundImage: `url("${slide.avif}")` }}
         >
           <picture className="home-hero-picture">
             <source srcSet={slide.avif} type="image/avif" />
@@ -117,7 +115,10 @@ export default function HomeHeroSlider() {
       ))}
 
       <div className="content-inner home-hero-content">
-        <h1>Learn | Engage | Build a safer digital future.</h1>
+        <h1>
+          <span>A student community for</span>{" "}
+          <span>data privacy and governance.</span>
+        </h1>
       </div>
 
       <div
