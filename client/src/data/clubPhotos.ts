@@ -8,6 +8,11 @@ export type ClubPhoto = {
   height: number;
 };
 
+export type HeroPhotoSet = {
+  id: string;
+  photos: readonly [ClubPhoto, ClubPhoto, ClubPhoto];
+};
+
 function photo(
   id: string,
   width: number,
@@ -30,8 +35,8 @@ export const boardGroupPhoto = photo(
   "dpgsa-board-2025-2026",
   1067,
   712,
-  "Association members standing together for a group photo.",
-  "An Association group photo."
+  "A group photo in front of a Data Privacy and Governance Society of Kenya backdrop.",
+  "A wider data privacy community group photo from the supplied archive."
 );
 
 export const meetingPhotos = [
@@ -39,14 +44,14 @@ export const meetingPhotos = [
     "dpgsa-meeting-01",
     1440,
     1908,
-    "Students seated together at a DPGSA meeting.",
-    "At a DPGSA meeting."
+    "DPGSA participants seated together during an auditorium meeting.",
+    "An Association meeting in an auditorium."
   ),
   photo(
     "dpgsa-meeting-02",
     1440,
     1920,
-    "Association members gathered during a meeting.",
+    "Two Association participants pictured at a DPGSA meeting.",
     "An Association gathering."
   ),
 ] satisfies ClubPhoto[];
@@ -87,63 +92,75 @@ export const essayCompetitionPhotos = [
     "essay-competition-01",
     1440,
     1140,
-    "A moment from the Association's essay-writing competition."
+    "A moment from the DPGSA essay-writing competition."
   ),
   photo(
     "essay-competition-02",
     1440,
     1138,
-    "A moment from the Association's essay-writing competition."
+    "A presentation moment from a DPGSA essay-writing competition."
   ),
   photo(
     "essay-competition-03",
     1440,
     1140,
-    "A moment from the Association's essay-writing competition."
+    "Student participants at a DPGSA essay-writing competition."
   ),
   photo(
     "essay-competition-04",
     1440,
     1140,
-    "A moment from the Association's essay-writing competition."
+    "Award recipients at the DPGSA essay-writing competition."
   ),
   photo(
     "essay-competition-05",
     1440,
     1139,
-    "A moment from the Association's essay-writing competition."
+    "A moment from the DPGSA essay-writing competition."
   ),
   photo(
     "essay-competition-06",
     592,
     467,
-    "A moment from the Association's essay-writing competition."
+    "A moment from the DPGSA essay-writing competition."
   ),
   photo(
     "essay-competition-07",
     1440,
     1139,
-    "A moment from the Association's essay-writing competition."
+    "Participants at the DPGSA essay-writing competition."
   ),
   photo(
     "essay-competition-08",
     1440,
     1139,
-    "A moment from the Association's essay-writing competition."
+    "A presentation at the DPGSA essay-writing competition."
   ),
 ] satisfies ClubPhoto[];
 
-export const homeHeroPhotos = [
+export const homeHeroSlides: HeroPhotoSet[] = [
   {
-    ...juaTermsPhotos[0],
-    alt: "Association members and JuaTerms collaborators gathered for a group photo.",
+    id: "auditorium-and-awards",
+    photos: [
+      meetingPhotos[0],
+      essayCompetitionPhotos[1],
+      essayCompetitionPhotos[3],
+    ],
   },
   {
-    ...juaTermsPhotos[1],
-    alt: "A participant speaks during a JuaTerms collaboration event.",
+    id: "meeting-and-presentations",
+    photos: [
+      meetingPhotos[1],
+      essayCompetitionPhotos[2],
+      essayCompetitionPhotos[4],
+    ],
   },
   {
-    ...juaTermsPhotos[2],
-    alt: "Association members and JuaTerms participants gathered together.",
+    id: "auditorium-and-recognition",
+    photos: [
+      meetingPhotos[0],
+      essayCompetitionPhotos[0],
+      essayCompetitionPhotos[7],
+    ],
   },
-] satisfies ClubPhoto[];
+];

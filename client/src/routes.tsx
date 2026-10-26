@@ -5,6 +5,7 @@ import Publications from "@/pages/Publications";
 import Events from "@/pages/Events";
 import Resources from "@/pages/Resources";
 import Membership from "@/pages/Membership";
+import PrivacyPolicy from "@/pages/PrivacyPolicy";
 
 type SiteRoute = {
   path: string;
@@ -62,5 +63,13 @@ export const siteRoutes: SiteRoute[] = [
     description:
       "Membership registration is now open. Registration fee KES 200; M-Pesa Till Number 1808373; recipient Bora Sarah.",
     component: Membership,
+  },
+  {
+    path: "/privacy-policy",
+    label: "Privacy Policy",
+    title: "Privacy Policy | DPGSA UoN",
+    description:
+      "How the DPGSA UoN public website handles visitor information, hosting data, third-party links and privacy rights in Kenya.",
+    component: PrivacyPolicy,
   },
 ];

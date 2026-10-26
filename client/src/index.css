@@ -1871,7 +1871,6 @@ summary:focus-visible {
   }
 }
 
-
 /* A quieter, warmer finish for page intros and repeat-visit cards. */
 :root {
   --motion-out: cubic-bezier(0.23, 1, 0.32, 1);
@@ -1882,8 +1881,16 @@ summary:focus-visible {
   overflow: hidden;
   isolation: isolate;
   background:
-    radial-gradient(ellipse at 92% 22%, rgba(8, 99, 201, 0.1), transparent 27rem),
-    radial-gradient(ellipse at 6% 110%, rgba(8, 99, 201, 0.045), transparent 30rem),
+    radial-gradient(
+      ellipse at 92% 22%,
+      rgba(8, 99, 201, 0.1),
+      transparent 27rem
+    ),
+    radial-gradient(
+      ellipse at 6% 110%,
+      rgba(8, 99, 201, 0.045),
+      transparent 30rem
+    ),
     linear-gradient(115deg, #f8fbfe, #edf5fc);
 }
 
@@ -1931,13 +1938,25 @@ summary:focus-visible {
 
 .section-muted {
   background-image:
-    radial-gradient(ellipse at 94% 6%, rgba(103, 167, 219, 0.12), transparent 29rem),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.28), rgba(235, 244, 251, 0.18));
+    radial-gradient(
+      ellipse at 94% 6%,
+      rgba(103, 167, 219, 0.12),
+      transparent 29rem
+    ),
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.28),
+      rgba(235, 244, 251, 0.18)
+    );
 }
 
 .about-band {
   background:
-    radial-gradient(ellipse at 92% 5%, rgba(8, 99, 201, 0.075), transparent 30rem),
+    radial-gradient(
+      ellipse at 92% 5%,
+      rgba(8, 99, 201, 0.075),
+      transparent 30rem
+    ),
     #f1f7fc;
 }
 
@@ -1989,7 +2008,11 @@ summary:focus-visible {
   isolation: isolate;
   padding: clamp(46px, 7vw, 82px) 0;
   background:
-    radial-gradient(ellipse at 94% 16%, rgba(121, 211, 98, 0.18), transparent 22rem),
+    radial-gradient(
+      ellipse at 94% 16%,
+      rgba(121, 211, 98, 0.18),
+      transparent 22rem
+    ),
     linear-gradient(120deg, #082e5a, #0b4c83 72%, #0c5a91);
   color: #ffffff;
 }
@@ -2171,6 +2194,207 @@ summary:focus-visible {
   .partnership-gallery-link svg,
   .card-learn-more svg {
     transform: none;
+    transition: none;
+  }
+}
+
+/* DPGSA-only hero mosaic: portrait auditorium image beside two event photos. */
+.home-hero-photo-grid {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 3px;
+  overflow: hidden;
+  background: #f4f7fa;
+}
+.home-hero-picture {
+  position: relative;
+  display: block;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: #102e55;
+}
+.home-hero-picture-auditorium {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+.home-hero-picture-top {
+  grid-column: 2;
+  grid-row: 1;
+}
+.home-hero-picture-bottom {
+  grid-column: 2;
+  grid-row: 2;
+}
+.home-hero-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.home-hero-picture-auditorium .home-hero-image {
+  object-position: center;
+}
+.home-hero-picture-top .home-hero-image,
+.home-hero-picture-bottom .home-hero-image {
+  object-position: center 12%;
+}
+.home-hero-content h1 {
+  width: min(430px, 31vw);
+  max-width: 100%;
+  font-size: clamp(18px, 1.7vw, 23px);
+  line-height: 1.28;
+}
+.home-hero-content h1 span {
+  display: block;
+}
+.home-hero-scrim {
+  background: linear-gradient(
+    0deg,
+    rgba(4, 17, 29, 0.58) 0%,
+    rgba(4, 17, 29, 0.18) 34%,
+    rgba(4, 17, 29, 0) 68%
+  );
+}
+@media (max-width: 780px) {
+  .home-hero {
+    aspect-ratio: 3 / 2;
+  }
+  .home-hero-content {
+    width: calc(100% - 36px);
+    padding-top: 70px;
+    padding-bottom: 23px;
+  }
+  .home-hero-content h1 {
+    width: min(230px, 54vw);
+    max-width: 100%;
+    font-size: clamp(17px, 2.8vw, 21px);
+  }
+}
+
+/* Clear, restrained feedback for cards and their keyboard-accessible links. */
+.feature-card,
+.activity-card,
+.photo-gallery-card {
+  transition:
+    transform 210ms var(--motion-out),
+    background-color 180ms ease-out,
+    border-color 180ms ease-out,
+    box-shadow 210ms var(--motion-out);
+}
+@media (hover: hover) and (pointer: fine) {
+  .focus-cards .feature-card:hover,
+  .focus-cards .feature-card:focus-within,
+  .activity-card:hover,
+  .activity-card:focus-within,
+  .photo-gallery-card:hover {
+    border-color: #a8c8e5;
+    background-color: #edf6ff;
+    box-shadow: 0 10px 24px rgba(20, 67, 111, 0.14);
+    transform: translateY(-3px);
+  }
+}
+.focus-cards .feature-card:focus-within,
+.activity-card:focus-within {
+  border-color: #8db9df;
+  background-color: #edf6ff;
+  box-shadow: 0 0 0 3px rgba(8, 99, 201, 0.12);
+}
+
+/* Plain-language policy layout uses the site's existing soft blue section wash. */
+.privacy-policy-copy {
+  max-width: 900px;
+  display: grid;
+  gap: 16px;
+}
+.privacy-policy-copy > p:first-child {
+  margin: 0 0 4px;
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.8;
+}
+.privacy-policy-copy section {
+  padding: clamp(19px, 3vw, 28px);
+  border: 1px solid #e1eaf2;
+  border-left: 3px solid #8db9df;
+  border-radius: 3px 14px 14px 3px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 4px 16px rgba(24, 52, 79, 0.055);
+}
+.privacy-policy-copy h2 {
+  margin: 0 0 10px;
+  color: #17395d;
+  font-size: clamp(18px, 2vw, 22px);
+  letter-spacing: -0.02em;
+}
+.privacy-policy-copy p,
+.privacy-policy-copy li {
+  color: #4b5a68;
+  font-size: 14px;
+  line-height: 1.75;
+}
+.privacy-policy-copy p {
+  margin: 0 0 11px;
+}
+.privacy-policy-copy p:last-child {
+  margin-bottom: 0;
+}
+.privacy-policy-copy ul {
+  display: grid;
+  gap: 8px;
+  margin: 12px 0 16px;
+  padding-left: 21px;
+}
+.privacy-policy-copy a {
+  color: #075aa8;
+  text-underline-offset: 3px;
+}
+.privacy-policy-copy a:hover {
+  color: #073f74;
+}
+
+.footer-social-links,
+.footer-utility-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+.footer-social-links a,
+.footer-utility-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #d0d8e0;
+  font-size: 10px;
+  text-decoration: none;
+  transition: color 160ms ease-out;
+}
+.footer-social-links a:hover,
+.footer-utility-links a:hover,
+.footer-utility-links a[aria-current="page"] {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+@media (max-width: 780px) {
+  .footer-bottom {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: 13px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .feature-card,
+  .activity-card,
+  .photo-gallery-card,
+  .footer-social-links a,
+  .footer-utility-links a {
     transition: none;
   }
 }

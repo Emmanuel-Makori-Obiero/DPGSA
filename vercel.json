@@ -8,6 +8,7 @@
     { "source": "/publications", "destination": "/publications.html" },
     { "source": "/events", "destination": "/events.html" },
     { "source": "/resources", "destination": "/resources.html" },
-    { "source": "/membership", "destination": "/membership.html" }
+    { "source": "/membership", "destination": "/membership.html" },
+    { "source": "/privacy-policy", "destination": "/privacy-policy.html" }
   ]
 }

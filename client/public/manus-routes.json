@@ -5,6 +5,7 @@
     { "path": "/publications", "title": "Research and Publications" },
     { "path": "/events", "title": "Activities" },
     { "path": "/resources", "title": "Resources and Learning" },
-    { "path": "/membership", "title": "Membership Registration" }
+    { "path": "/membership", "title": "Membership Registration" },
+    { "path": "/privacy-policy", "title": "Privacy Policy" }
   ]
 }

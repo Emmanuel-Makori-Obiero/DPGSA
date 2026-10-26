@@ -8,7 +8,7 @@ import {
 } from "lucide-react";
 import HomeHeroSlider from "@/components/HomeHeroSlider";
 import PhotoGallery from "@/components/PhotoGallery";
-import { boardGroupPhoto, meetingPhotos } from "@/data/clubPhotos";
+import { essayCompetitionPhotos, meetingPhotos } from "@/data/clubPhotos";
 
 const focusAreas = [
   { icon: Scale, title: "Digital Rights and Policy Regulation" },
@@ -81,8 +81,8 @@ export default function Home() {
       <PhotoGallery
         eyebrow="Association moments"
         title="Learning and meeting together."
-        description="A few moments from DPGSA meetings and the Association community."
-        photos={[boardGroupPhoto, ...meetingPhotos]}
+        description="A few moments from DPGSA meetings and essay-competition activities."
+        photos={[meetingPhotos[0], meetingPhotos[1], essayCompetitionPhotos[1]]}
         tone="muted"
       />
 

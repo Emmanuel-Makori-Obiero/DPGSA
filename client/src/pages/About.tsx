@@ -69,8 +69,8 @@ export default function About() {
       </section>
       <PhotoGallery
         eyebrow="Our community"
-        title="Students learning together."
-        description="An Association group photo from the shared activity archive."
+        title="A wider data privacy community."
+        description="The backdrop in this group photo identifies the Data Privacy and Governance Society of Kenya (DPGSK)."
         photos={[boardGroupPhoto]}
         columns={3}
       />

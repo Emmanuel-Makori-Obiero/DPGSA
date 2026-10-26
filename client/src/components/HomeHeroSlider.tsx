@@ -1,14 +1,8 @@
 import { useEffect, useState } from "react";
 import { ChevronRight, Pause, Play } from "lucide-react";
-import { homeHeroPhotos } from "@/data/clubPhotos";
+import { homeHeroSlides } from "@/data/clubPhotos";
 
-type HeroSlide = {
-  avif: string;
-  webp: string;
-  alt: string;
-};
-
-const slides: HeroSlide[] = homeHeroPhotos;
+const slides = homeHeroSlides;
 const SLIDE_INTERVAL_MS = 3000;
 
 export default function HomeHeroSlider() {
@@ -71,7 +65,7 @@ export default function HomeHeroSlider() {
     <section
       className={`home-hero${isRotationPaused ? " is-paused" : ""}`}
       aria-roledescription="carousel"
-      aria-label="Data Privacy and Governance Students’ Association highlights"
+      aria-label="DPGSA meeting and essay-competition photographs"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onFocus={event => {
@@ -92,24 +86,40 @@ export default function HomeHeroSlider() {
       {slides.map((slide, index) => (
         <div
           className={`home-hero-slide${activeIndex === index ? " is-active" : ""}`}
-          key={slide.avif}
+          key={slide.id}
           aria-hidden={activeIndex !== index}
           inert={activeIndex !== index}
           role="group"
           aria-roledescription="slide"
           aria-label={`${index + 1} of ${slides.length}`}
         >
-          <picture className="home-hero-picture">
-            <source srcSet={slide.avif} type="image/avif" />
-            <source srcSet={slide.webp} type="image/webp" />
-            <img
-              className="home-hero-image"
-              src={slide.webp}
-              alt={slide.alt}
-              fetchPriority={index === 0 ? "high" : "auto"}
-              loading="eager"
-            />
-          </picture>
+          <div className="home-hero-photo-grid">
+            {slide.photos.map((photo, photoIndex) => (
+              <picture
+                className={`home-hero-picture ${
+                  photoIndex === 0
+                    ? "home-hero-picture-auditorium"
+                    : photoIndex === 1
+                      ? "home-hero-picture-top"
+                      : "home-hero-picture-bottom"
+                }`}
+                key={photo.id}
+              >
+                <source srcSet={photo.avif} type="image/avif" />
+                <source srcSet={photo.webp} type="image/webp" />
+                <img
+                  className="home-hero-image"
+                  src={photo.webp}
+                  alt={photo.alt}
+                  fetchPriority={
+                    index === 0 && photoIndex === 0 ? "high" : "auto"
+                  }
+                  loading={index === 0 ? "eager" : "lazy"}
+                  decoding={index === 0 ? "sync" : "async"}
+                />
+              </picture>
+            ))}
+          </div>
           <div className="home-hero-scrim" />
         </div>
       ))}

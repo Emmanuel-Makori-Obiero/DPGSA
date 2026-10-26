@@ -1,5 +1,5 @@
 import { useState, type ReactNode } from "react";
-import { ChevronRight, Menu, X } from "lucide-react";
+import { ChevronRight, Instagram, Linkedin, Menu, X } from "lucide-react";
 
 const navigation = [
   { label: "Home", href: "/" },
@@ -153,7 +153,36 @@ export default function SiteLayout({ children, currentPath }: SiteLayoutProps) {
             Data Privacy and Governance Students’ Association · University of
             Nairobi Chapter
           </span>
-          <a href="#main-content">Back to top</a>
+          <div
+            className="footer-social-links"
+            aria-label="Official DPGSA profiles"
+          >
+            <a
+              href="https://www.linkedin.com/in/dpgsa-uon/?isSelfProfile=false"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Linkedin size={14} aria-hidden="true" /> LinkedIn
+            </a>
+            <a
+              href="https://www.instagram.com/datapgsa_uon/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Instagram size={14} aria-hidden="true" /> Instagram
+            </a>
+          </div>
+          <div className="footer-utility-links">
+            <a
+              href="/privacy-policy"
+              aria-current={
+                currentPath === "/privacy-policy" ? "page" : undefined
+              }
+            >
+              Privacy Policy
+            </a>
+            <a href="#main-content">Back to top</a>
+          </div>
         </div>
       </footer>
     </div>
