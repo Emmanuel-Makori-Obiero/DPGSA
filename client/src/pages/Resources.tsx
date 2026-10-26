@@ -12,13 +12,13 @@ export default function Resources() {
       <PageIntro
         eyebrow="Resources and learning"
         title="A useful place to start exploring."
-        description="The resources page can gather explainers, reading lists and learning materials. The examples below are fictional placeholders, not official recommendations."
+        description="This page previews a future learning library. The examples below are fictional placeholders, not official recommendations."
       />
       <section className="content-section" aria-labelledby="resource-list-title">
         <div className="content-inner">
           <div className="section-heading-simple">
-            <div><p className="section-label">Learning library</p><h2 id="resource-list-title">Sample resources</h2></div>
-            <p className="section-intro">Only reviewed and approved external resources will be linked here once the association provides its preferred materials.</p>
+            <div><p className="section-kicker">Learning library</p><h2 id="resource-list-title">Sample resources</h2></div>
+            <p className="section-intro">Only reviewed and approved external materials will be linked here once the association provides its preferred resources.</p>
           </div>
           <div className="resource-list">
             {resources.map((resource) => (
@@ -29,6 +29,12 @@ export default function Resources() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+      <section className="content-section section-muted" aria-labelledby="privacy-note-title">
+        <div className="content-inner membership-note">
+          <div><p className="section-kicker">Demo privacy information</p><h2 id="privacy-note-title">No analytics or marketing cookies are enabled.</h2></div>
+          <p>The preview notice stores only the button choice on this device using local browser storage. This site demo does not include a contact form, user account or tracking integration.</p>
         </div>
       </section>
     </>
