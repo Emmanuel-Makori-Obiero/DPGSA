@@ -12,6 +12,8 @@ Add these official profiles to the shared footer: [DPGSA on LinkedIn](https://ww
 
 Remove the JuaTerms partnership photos from the homepage carousel. Use DPGSA meeting and essay-competition photos instead, including the auditorium photograph. Select slide-specific image positioning so visible faces stay in frame. Keep edge-to-edge media, AVIF/WebP delivery, automatic three-second rotation, accessible pause/manual controls and reduced-motion support. Keep JuaTerms photos on the Activities partnership section only.
 
+- [x] Rotate the homepage headline in sync with the active hero photo set on the existing three-second interval. Keep text factual, the transition subtle, reduced-motion support intact, and automatic screen-reader announcements disabled.
+
 Give homepage focus, activity and gallery cards a noticeable, accessible pale-blue hover/focus color change as well as their existing shadow. Keep the transition short and respect reduced-motion preferences.
 
 ## Cookie banner and preferences

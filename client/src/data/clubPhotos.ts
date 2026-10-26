@@ -10,6 +10,7 @@ export type ClubPhoto = {
 
 export type HeroPhotoSet = {
   id: string;
+  headline: readonly [string, string];
   photos: readonly [ClubPhoto, ClubPhoto, ClubPhoto];
 };
 
@@ -141,6 +142,7 @@ export const essayCompetitionPhotos = [
 export const homeHeroSlides: HeroPhotoSet[] = [
   {
     id: "auditorium-and-awards",
+    headline: ["A student community for", "data privacy and governance."],
     photos: [
       meetingPhotos[0],
       essayCompetitionPhotos[1],
@@ -149,6 +151,7 @@ export const homeHeroSlides: HeroPhotoSet[] = [
   },
   {
     id: "meeting-and-presentations",
+    headline: ["Learning about law and", "technology together."],
     photos: [
       meetingPhotos[1],
       essayCompetitionPhotos[2],
@@ -157,6 +160,7 @@ export const homeHeroSlides: HeroPhotoSet[] = [
   },
   {
     id: "auditorium-and-recognition",
+    headline: ["Exploring privacy and", "digital governance."],
     photos: [
       meetingPhotos[0],
       essayCompetitionPhotos[0],

@@ -60,6 +60,7 @@ export default function HomeHeroSlider() {
     isPausedByUser ||
     isReducedMotion ||
     !isPageVisible;
+  const activeSlide = slides[activeIndex];
 
   return (
     <section
@@ -125,9 +126,14 @@ export default function HomeHeroSlider() {
       ))}
 
       <div className="content-inner home-hero-content">
-        <h1>
-          <span>A student community for</span>{" "}
-          <span>data privacy and governance.</span>
+        <h1
+          key={activeSlide.id}
+          aria-live={isRotationPaused ? "polite" : "off"}
+          aria-atomic="true"
+        >
+          {activeSlide.headline.map((line, index) => (
+            <span key={`${activeSlide.id}-${index}`}>{line}</span>
+          ))}
         </h1>
       </div>
 

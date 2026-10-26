@@ -1,6 +1,6 @@
 # DPGSA UoN site: Association imagery, privacy, and social links
 
-Retain the existing registration site, galleries, JuaTerms partnership page, and npm/Vercel workflow. The homepage carousel must show DPGSA activities rather than JuaTerms partnership imagery. Include the auditorium photograph from the DPGSA meeting archive, plus essay-competition photographs. Use per-slide focus positions for the auditorium photo so faces remain visible, keep the three-second interval, and preserve accessible pause/manual controls and reduced-motion behavior.
+Retain the existing registration site, galleries, JuaTerms partnership page, and npm/Vercel workflow. The homepage carousel must show DPGSA activities rather than JuaTerms partnership imagery. Include the auditorium photograph from the DPGSA meeting archive, plus essay-competition photographs. Use per-slide focus positions for the auditorium photo so faces remain visible, keep the three-second interval, and preserve accessible pause/manual controls and reduced-motion behavior. Rotate concise, factual headline copy in sync with each active slide; use a restrained transition and avoid interrupting screen readers during automatic rotation.
 
 Keep JuaTerms collaboration imagery on Activities only. Do not label the DPGSK-branded group photo as a DPGSA group.
 
