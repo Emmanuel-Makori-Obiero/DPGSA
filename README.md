@@ -8,7 +8,7 @@ Home (`/`), About (`/about`), Publications (`/publications`), Activities (`/even
 
 ## Homepage carousel and registration image
 
-The homepage uses a two-image carousel with generated, illustrative photos. It serves compact 1920×1080 AVIF files first (about 63 KB and 129 KB) and retains the matching WebP files as a format fallback. The registration page displays the original poster supplied by the user at `client/public/images/membership-registration-poster.jpeg` and repeats its payment details in accessible text.
+The homepage carousel advances every three seconds and features three real club-activity photos supplied by the Association through Google Drive. It serves compact AVIF files first with matching WebP fallbacks; its social preview uses an original JPEG. The registration page displays the original poster supplied by the user at `client/public/images/membership-registration-poster.jpeg` and repeats its payment details in accessible text.
 
 ## Run with npm
 

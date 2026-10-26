@@ -9,7 +9,7 @@ const scriptDirectory = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(scriptDirectory, "..");
 const outputDirectory = path.join(projectRoot, "dist", "public");
 const canonicalOrigin = "https://dpgsa.vercel.app";
-const socialImage = `${canonicalOrigin}/images/home-slider-seminar.webp`;
+const socialImage = `${canonicalOrigin}/images/club-collaboration-jua-terms-group.jpg`;
 const startMarker = "<!-- route-app-start -->";
 const endMarker = "<!-- route-app-end -->";
 

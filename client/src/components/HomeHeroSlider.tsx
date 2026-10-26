@@ -9,18 +9,23 @@ type HeroSlide = {
 
 const slides: HeroSlide[] = [
   {
-    avif: "/images/home-slider-seminar.avif",
-    webp: "/images/home-slider-seminar.webp",
-    alt: "Generated illustrative photo of university students taking part in a privacy and technology seminar.",
+    avif: "/images/club-collaboration-jua-terms-group.avif",
+    webp: "/images/club-collaboration-jua-terms-group.webp",
+    alt: "Association members at a group photo during a JuaTerms collaboration activity.",
   },
   {
-    avif: "/images/home-slider-campus.avif",
-    webp: "/images/home-slider-campus.webp",
-    alt: "Generated illustrative photo of students talking together on a university campus.",
+    avif: "/images/club-collaboration-speaker.avif",
+    webp: "/images/club-collaboration-speaker.webp",
+    alt: "A member speaks at a JuaTerms collaboration activity.",
+  },
+  {
+    avif: "/images/club-essay-competition-award.avif",
+    webp: "/images/club-essay-competition-award.webp",
+    alt: "Students exchange an award certificate at a Data Privacy and Governance essay competition activity.",
   },
 ];
 
-const SLIDE_INTERVAL_MS = 6800;
+const SLIDE_INTERVAL_MS = 3000;
 
 export default function HomeHeroSlider() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -115,7 +120,7 @@ export default function HomeHeroSlider() {
             <source srcSet={slide.webp} type="image/webp" />
             <img
               className="home-hero-image"
-              src={slide.avif}
+              src={slide.webp}
               alt={slide.alt}
               fetchPriority={index === 0 ? "high" : "auto"}
               loading="eager"
