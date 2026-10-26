@@ -83,8 +83,8 @@ export default function SiteLayout({ children, currentPath }: SiteLayoutProps) {
       <header className="site-header">
         <div className="header-inner">
           <a className="brand" href="/" aria-label="DPGSA UoN home">
-            <span className="brand-mark" aria-hidden="true"><span>D</span></span>
-            <span className="brand-lockup"><strong>DPGSA</strong><small>University of Nairobi</small></span>
+            <img className="brand-logo-image" src="/images/dpgsa-logo.webp" alt="" />
+            <span className="brand-lockup"><strong>DPGSA</strong><small>University of Nairobi Chapter</small></span>
           </a>
           <button className="menu-toggle" type="button" aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"} aria-expanded={menuOpen} aria-controls="primary-navigation" onClick={() => setMenuOpen((open) => !open)}>
             {menuOpen ? <X size={21} aria-hidden="true" /> : <Menu size={21} aria-hidden="true" />}
@@ -102,8 +102,8 @@ export default function SiteLayout({ children, currentPath }: SiteLayoutProps) {
         <div className="content-inner footer-grid">
           <div className="footer-about">
             <a className="brand footer-brand" href="/">
-              <span className="brand-mark" aria-hidden="true"><span>D</span></span>
-              <span className="brand-lockup"><strong>DPGSA</strong><small>University of Nairobi</small></span>
+              <img className="brand-logo-image" src="/images/dpgsa-logo.webp" alt="" />
+              <span className="brand-lockup"><strong>DPGSA</strong><small>University of Nairobi Chapter</small></span>
             </a>
             <p>This is a DPGSA UoN website demo. Official association information and contacts are awaiting confirmation.</p>
             <a className="footer-email" href="/contact"><Mail size={15} aria-hidden="true" /> Contact details pending</a>
