@@ -4,9 +4,11 @@
   "buildCommand": "pnpm run build:static",
   "outputDirectory": "dist/public",
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/leadership", "destination": "/leadership.html" },
+    { "source": "/publications", "destination": "/publications.html" },
+    { "source": "/events", "destination": "/events.html" },
+    { "source": "/resources", "destination": "/resources.html" },
+    { "source": "/contact", "destination": "/contact.html" }
   ]
 }
