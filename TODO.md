@@ -27,7 +27,7 @@ Give homepage focus, activity and gallery cards a noticeable, accessible pale-bl
 
 ## Responsive layout
 
-- [x] Keep the homepage mosaic and headline legible at phone widths, keep carousel controls clear of faces and copy, use touch-friendly mobile navigation links, and stack page-section headings and descriptions at tablet widths where side-by-side columns become cramped.
+- [x] At phone widths, let the homepage photography fill most of the first screen, with the portrait meeting image full width and two supporting photos below; keep faces visible, the headline readable and the next control clear of both faces and copy. Use mobile navigation links at least 44px high, and stack section headings and descriptions at tablet widths where side-by-side columns become cramped.
 
 ## Existing media and registration
 
