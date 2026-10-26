@@ -1,11 +1,17 @@
 # DPGSA UoN — Public registration site
 
+## Homepage transparent navigation and photo slider
+
+- On the homepage, make the shared navigation bar transparent and overlay it on the hero imagery; retain the current solid navigation styling on the other routes.
+- Place a full-width photo slider directly below/behind the navigation with two images. Generate two coordinated, original landscape hero images for the slideshow.
+- Make the slider advance automatically, restart its full timer whenever a slide is changed, and allow manual previous/next and direct slide selection.
+- Provide an explicit keyboard-operable pause/resume control. Pause when the pointer is over the carousel, when the document is hidden, and when the visitor prefers reduced motion. On keyboard focus, stop rotation and keep it stopped after focus leaves until the visitor explicitly resumes it.
+- Use real page text, not image-embedded text, for headings and buttons. Provide meaningful image descriptions and a visible, labeled slide-position indicator.
+- Use responsive overlays/crops, smooth opacity/transform transitions and reduced-motion handling; avoid animation of layout properties.
+
 ## Hide internal governance material
 
-- Remove the full Constitution from all public routes, navigation, footer links, initial-page metadata, route declarations, sitemap and Vercel clean-URL rewrites. Remove the full constitutional text module and Constitution page from the current source tree.
-- Remove the public leadership/governance page, named officer-role list, leader duties and succession/vacancy details. Do not repackage them as summaries on another page.
-- Remove the membership-removal, application-rejection and appeal provisions, and internal membership-record handling, from all public site pages.
-- Remove internal notices, Secretariat duties, and every public link or explanatory copy that directs readers to the Constitution.
+- Keep the full Constitution and leadership/governance pages, internal role duties, membership-removal/rejection/appeal details, secretariat information, and links to internal notices out of public source, routes, navigation, metadata, sitemap and clean URL rewrites.
 
 ## Membership registration and imagery
 
@@ -15,8 +21,8 @@
 - Include the full user-supplied registration poster, preserving its two association photographs and its original design. Provide useful alt text and repeat essential registration information as real page text.
 - Do not invent an application form or registration URL, additional eligibility or payment instructions, contact details, members’ names, event dates or leadership details.
 
-## Remaining public pages and release
+## Remaining public pages and local workflow
 
-- Keep the public site’s existing mission, vision, focus areas, activities, publications and learning-resource information without mentioning or linking to the private Constitution or internal role duties.
-- Synchronize the clean route registry, route-specific titles/descriptions and canonicals, Vercel rewrites, sitemap, fallback, README and image credits with the reduced public route set.
-- Keep the existing responsive, keyboard-accessible layout and official association branding.
+- Keep the public site’s mission, vision, focus areas, activities, publications and learning-resource information without mentioning or linking to the private Constitution or internal role duties.
+- Synchronize the six-page route registry, metadata, Vercel rewrites, sitemap, fallback, README and image credits with the public route set. Keep the public site responsive, keyboard accessible and branded.
+- Ensure the current Vite workflow remains usable through npm, including `npm run dev:static` for local development; no additional packages are required.

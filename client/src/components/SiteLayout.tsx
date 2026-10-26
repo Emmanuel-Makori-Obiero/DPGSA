@@ -35,8 +35,10 @@ export function PageIntro({ eyebrow, title, description }: PageIntroProps) {
 
 export default function SiteLayout({ children, currentPath }: SiteLayoutProps) {
   const [menuOpen, setMenuOpen] = useState(false);
+  const isHome = currentPath === "/";
+
   return (
-    <div className="site-shell">
+    <div className={`site-shell${isHome ? " site-shell-home" : ""}`}>
       <a className="skip-link" href="#main-content">
         Skip to content
       </a>
@@ -46,7 +48,7 @@ export default function SiteLayout({ children, currentPath }: SiteLayoutProps) {
           <span>Data privacy · Governance · Digital rights</span>
         </div>
       </div>
-      <header className="site-header">
+      <header className={`site-header${isHome ? " site-header-overlay" : ""}`}>
         <div className="header-inner">
           <a
             className="brand"

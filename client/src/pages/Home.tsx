@@ -6,6 +6,7 @@ import {
   Scale,
   ShieldCheck,
 } from "lucide-react";
+import HomeHeroSlider from "@/components/HomeHeroSlider";
 
 const focusAreas = [
   { icon: Scale, title: "Digital Rights and Policy Regulation" },
@@ -17,7 +18,7 @@ const focusAreas = [
 const activities = [
   [
     "Moots & Debates",
-    "Annual moot competitions around legal-technology interests.",
+    "Annual moot competitions around legal technology areas of interest.",
   ],
   [
     "Legal Trainings and Workshops",
@@ -40,30 +41,11 @@ const activities = [
 export default function Home() {
   return (
     <>
-      <section className="reference-hero" aria-labelledby="hero-title">
-        <div className="reference-hero-overlay" />
-        <div className="reference-hero-content">
-          <p className="hero-kicker">
-            Data Privacy and Governance Students’ Association · University of
-            Nairobi, Parklands Campus Chapter
-          </p>
-          <h1 id="hero-title">
-            Nurturing the next generation of technology and innovation law
-            practitioners.
-          </h1>
-          <p>
-            Explore data privacy, digital rights and legal technology with the
-            University of Nairobi student community.
-          </p>
-          <a className="blue-button" href="/membership">
-            Membership registration is open{" "}
-            <ChevronRight size={15} aria-hidden="true" />
-          </a>
-        </div>
-      </section>
+      <HomeHeroSlider />
 
       <section
         className="mission-section content-inner"
+        id="home-mission"
         aria-labelledby="mission-title"
       >
         <div className="mission-art">
