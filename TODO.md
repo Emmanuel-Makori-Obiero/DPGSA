@@ -14,6 +14,11 @@ Remove the JuaTerms partnership photos from the homepage carousel. Use DPGSA mee
 
 Give homepage focus, activity and gallery cards a noticeable, accessible pale-blue hover/focus color change as well as their existing shadow. Keep the transition short and respect reduced-motion preferences.
 
+## Cookie banner and preferences
+
+- [x] Add a full-width, responsive privacy banner following the supplied reference, with “We value your privacy,” an explanatory message, a Cookie Policy link, and separate “Reject All” and “Accept All” buttons. Make the buttons keyboard accessible and keep the copy accurate: the public site currently uses no advertising or analytics cookies.
+- [x] Save the visitor’s choice in a first-party preference cookie for six months, explain the cookie and current tracking practices on `/privacy-policy`, and provide a footer control to reopen the preferences.
+
 ## Existing media and registration
 
 Continue to use the Association photo archive on relevant pages, with accurate alt text and no invented event dates, names or officer details. Keep the supplied registration poster and show its registration fee KES 200, M-Pesa Till Number 1808373 and recipient name Bora Sarah. Do not invent an application form or additional payment instructions.

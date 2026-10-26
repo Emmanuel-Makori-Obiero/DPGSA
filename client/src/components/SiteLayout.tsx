@@ -1,5 +1,8 @@
 import { useState, type ReactNode } from "react";
 import { ChevronRight, Instagram, Linkedin, Menu, X } from "lucide-react";
+import CookieConsentBanner, {
+  COOKIE_SETTINGS_EVENT,
+} from "@/components/CookieConsentBanner";
 
 const navigation = [
   { label: "Home", href: "/" },
@@ -181,10 +184,19 @@ export default function SiteLayout({ children, currentPath }: SiteLayoutProps) {
             >
               Privacy Policy
             </a>
+            <button
+              type="button"
+              onClick={() =>
+                window.dispatchEvent(new Event(COOKIE_SETTINGS_EVENT))
+              }
+            >
+              Cookie settings
+            </button>
             <a href="#main-content">Back to top</a>
           </div>
         </div>
       </footer>
+      <CookieConsentBanner />
     </div>
   );
 }

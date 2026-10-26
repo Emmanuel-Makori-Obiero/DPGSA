@@ -61,6 +61,24 @@ export default function PrivacyPolicy() {
             </p>
           </section>
 
+          <section aria-labelledby="privacy-cookies">
+            <h2 id="privacy-cookies">Cookies and preferences</h2>
+            <p>
+              The public pages do not currently use advertising,
+              personalised-content or analytics cookies. The privacy banner
+              stores your choice in a first-party cookie named{" "}
+              <code>dpgsa_cookie_consent</code> for six months so it can
+              remember whether you accepted or rejected optional cookies. No
+              optional tracking is currently active. You can change your choice
+              using Cookie settings in the footer, or clear DPGSA site cookies
+              in your browser settings; the banner will then appear again.
+            </p>
+            <p>
+              If optional cookies are introduced later, this notice will be
+              updated and the saved preference will be respected.
+            </p>
+          </section>
+
           <section aria-labelledby="privacy-payments-and-photos">
             <h2 id="privacy-payments-and-photos">Payments and photographs</h2>
             <p>

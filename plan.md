@@ -13,3 +13,7 @@ Add the supplied DPGSA LinkedIn and Instagram links to the footer. Give feature,
 The Kenya Data Protection Act, 2019 section 26 lists the rights to be informed, access personal data, object to all or part of processing, correct false or misleading data and delete false or misleading data. Section 29 covers information that should be given when personal data is collected. Primary links: [Kenya Law](https://new.kenyalaw.org/akn/ke/act/2019/24/eng@2022-12-31) and [ODPC rights of a data subject](https://www.odpc.go.ke/rights-of-a-data-subject/).
 
 Vercel’s [Privacy Notice](https://vercel.com/legal/privacy-notice) describes processing of request/usage details, IP addresses, logs and device data in connection with its services. Attribute any such hosting-provider handling to Vercel and avoid implying that DPGSA directly receives or uses all of it.
+
+## Cookie preferences
+
+Add a fixed, responsive banner to the shared layout, following the supplied reference’s full-width white strip, prominent privacy heading, short explanatory copy, outlined rejection action and blue primary acceptance action. Keep the copy accurate: the public site does not currently use advertising or analytics cookies. Save the visitor’s choice in a first-party preference cookie for six months; do not enable optional tracking. Link the banner to a cookie-specific section of `/privacy-policy`, explain the preference cookie there, and provide a footer control to reopen the choices. Preserve keyboard access and reduced-motion support.
