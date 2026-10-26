@@ -1,4 +1,4 @@
-import { PageIntro } from "@/components/SiteLayout";
+import { PageIntro } from "@/components/site/SiteLayout";
 
 const legalLinks = [
   {

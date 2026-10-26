@@ -6,8 +6,8 @@ import {
   Scale,
   ShieldCheck,
 } from "lucide-react";
-import HomeHeroSlider from "@/components/HomeHeroSlider";
-import PhotoGallery from "@/components/PhotoGallery";
+import HomeHeroSlider from "@/components/site/HomeHeroSlider";
+import PhotoGallery from "@/components/site/PhotoGallery";
 import { essayCompetitionPhotos, meetingPhotos } from "@/data/clubPhotos";
 
 const focusAreas = [

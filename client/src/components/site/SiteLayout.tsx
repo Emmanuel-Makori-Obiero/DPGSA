@@ -2,7 +2,7 @@ import { useState, type ReactNode } from "react";
 import { ChevronRight, Instagram, Linkedin, Menu, X } from "lucide-react";
 import CookieConsentBanner, {
   COOKIE_SETTINGS_EVENT,
-} from "@/components/CookieConsentBanner";
+} from "@/components/site/CookieConsentBanner";
 
 const navigation = [
   { label: "Home", href: "/" },

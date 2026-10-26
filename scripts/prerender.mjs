@@ -86,7 +86,7 @@ const vite = await createServer({
 try {
   const [{ siteRoutes }, { default: SiteLayout }] = await Promise.all([
     vite.ssrLoadModule("/src/routes.tsx"),
-    vite.ssrLoadModule("/src/components/SiteLayout.tsx"),
+    vite.ssrLoadModule("/src/components/site/SiteLayout.tsx"),
   ]);
   const template = await readFile(
     path.join(outputDirectory, "index.html"),

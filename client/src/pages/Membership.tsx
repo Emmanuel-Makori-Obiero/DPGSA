@@ -1,6 +1,6 @@
 import { CircleCheck, ChevronRight } from "lucide-react";
-import { PageIntro } from "@/components/SiteLayout";
-import PhotoGallery from "@/components/PhotoGallery";
+import { PageIntro } from "@/components/site/SiteLayout";
+import PhotoGallery from "@/components/site/PhotoGallery";
 import { meetingPhotos } from "@/data/clubPhotos";
 
 const benefits = [

@@ -1,5 +1,5 @@
-import { PageIntro } from "@/components/SiteLayout";
-import PhotoGallery from "@/components/PhotoGallery";
+import { PageIntro } from "@/components/site/SiteLayout";
+import PhotoGallery from "@/components/site/PhotoGallery";
 import { boardGroupPhoto } from "@/data/clubPhotos";
 
 const focusAreas = [
