@@ -19,7 +19,7 @@ export default function PhotoGallery({
   photos,
   tone = "plain",
   columns = 3,
-  mobileColumns = 2,
+  mobileColumns = 1,
 }: PhotoGalleryProps) {
   return (
     <section

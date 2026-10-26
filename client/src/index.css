@@ -2598,10 +2598,7 @@ summary:focus-visible {
 }
 
 @media (max-width: 520px) {
-  .photo-gallery-grid,
-  .photo-gallery-grid[data-columns="2"],
-  .photo-gallery-grid[data-columns="3"],
-  .photo-gallery-grid[data-columns="4"] {
+  .photo-gallery-grid[data-mobile-columns="2"] {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px;
   }

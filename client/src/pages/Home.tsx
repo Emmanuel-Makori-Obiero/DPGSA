@@ -85,7 +85,7 @@ export default function Home() {
         description="A few moments from DPGSA meetings and essay-competition activities."
         photos={[meetingPhotos[0], meetingPhotos[1], essayCompetitionPhotos[1]]}
         tone="muted"
-        mobileColumns={1}
+        mobileColumns={2}
       />
 
       <section className="about-band" aria-labelledby="focus-title">
