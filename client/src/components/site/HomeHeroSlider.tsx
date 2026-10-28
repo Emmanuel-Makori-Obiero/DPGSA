@@ -125,16 +125,28 @@ export default function HomeHeroSlider() {
         </div>
       ))}
 
-      <div className="content-inner home-hero-content">
-        <h1
-          key={activeSlide.id}
-          aria-live={isRotationPaused ? "polite" : "off"}
-          aria-atomic="true"
-        >
-          {activeSlide.headline.map((line, index) => (
-            <span key={`${activeSlide.id}-${index}`}>{line}</span>
-          ))}
-        </h1>
+      <div className="home-hero-mobile-spacer" aria-hidden="true" />
+
+      <div className="home-hero-content">
+        <div className="home-hero-copy">
+          <p className="home-hero-kicker">University of Nairobi Chapter</p>
+          <h1
+            key={activeSlide.id}
+            aria-live={isRotationPaused ? "polite" : "off"}
+            aria-atomic="true"
+          >
+            {activeSlide.headline.map((line, index) => (
+              <span key={`${activeSlide.id}-${index}`}>{line}</span>
+            ))}
+          </h1>
+          <p className="home-hero-intro">
+            DPGSA is the Data Privacy and Governance Students’ Association at
+            the University of Nairobi.
+          </p>
+          <a className="home-hero-about-link" href="/about">
+            About the Association <ChevronRight size={15} aria-hidden="true" />
+          </a>
+        </div>
       </div>
 
       <div

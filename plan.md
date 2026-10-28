@@ -12,7 +12,19 @@ Add the supplied DPGSA LinkedIn and Instagram links to the footer. Give feature,
 
 Keep route-level pages in `client/src/pages/`, DPGSA-owned layout and media components in `client/src/components/site/`, reusable interface primitives in `client/src/components/ui/`, and photo metadata/headlines in `client/src/data/`. Keep route metadata in `routes.tsx` and document that Vercel uses static prerendering while `server/`, `shared/` and `drizzle/` remain for the optional Express/Docker target.
 
-At phone widths, use the compact three-photo homepage mosaic: keep the portrait auditorium photo beside the two supporting photos. Arrange only the Association Moments gallery in two columns to use the available phone width and reduce its vertical height; retain full-width gallery cards elsewhere. Preserve image aspect ratios, keep the headline readable and position the next control away from faces and copy. Keep mobile navigation links at least 44px high. Stack section headings and their descriptions at tablet widths when the two-column layout makes either column cramped.
+At phone widths, use the compact three-photo homepage mosaic: keep the portrait auditorium photo beside the two supporting photos. Arrange only the Association Moments gallery in two columns to use the available phone width and reduce its vertical height; retain full-width gallery cards elsewhere. Preserve image aspect ratios, keep the headline readable and position the next control away from faces and copy. Keep mobile navigation links at least 44px high.
+
+Keep the shared site header sticky on all routes. On the homepage, retain the translucent masthead over the mosaic at the top of the page and keep it visible while scrolling. Add scroll offsets so anchored headings remain visible below the sticky header.
+
+Use the hero to identify the Data Privacy and Governance Students’ Association and its University of Nairobi chapter without leaving the homepage. Preserve the existing three-second carousel and synchronized headlines; add a concise organization description and a link to About the Association. Keep the copy within the first screen and avoid placing text over faces.
+
+On desktop, put section descriptions directly under their associated headings instead of aligning them at the far edge. Use consistent 4:3 image frames and equal-height gallery cards while containing (not cropping) the original photos. Treat one-photo galleries as a single intentional card rather than reserving unused grid columns.
+
+## User-supplied desktop layout references
+
+- [Association Moments layout and equal image sections](https://drive.google.com/file/d/1OgqQgUQGECmI0tWAiO1ymq-DN9VBm9oZ/view?usp=sharing)
+- [Community group-photo layout](https://drive.google.com/file/d/1eIJE9Af-r7ysGxQyJ01cyPKqaaNtD8GJ/view?usp=sharing)
+- [Gallery section sizing](https://drive.google.com/file/d/1DJxoxPKDI5hZ8KUfmMgzOBjMjRIz1glr/view?usp=sharing)
 
 ## Sources for the privacy page
 

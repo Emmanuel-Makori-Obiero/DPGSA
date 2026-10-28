@@ -29,6 +29,12 @@ Give homepage focus, activity and gallery cards a noticeable, accessible pale-bl
 
 - [x] At phone widths, use the compact three-photo carousel mosaic, with the portrait meeting photo beside the two supporting images. Arrange only Association Moments in a compact two-column grid to use available phone width and reduce its vertical height; keep other galleries full width. Preserve image aspect ratios; keep the headline readable, the next control clear of faces and copy, mobile navigation links at least 44px high, and stack section headings and descriptions at tablet widths where side-by-side columns become cramped.
 
+## Sticky navigation, hero introduction and gallery layout
+
+- [x] Keep the shared header sticky across every page. On the homepage, let the transparent masthead sit over the photo mosaic initially and remain visible at the top during scrolling; offset in-page links so their headings are not hidden.
+- [x] Make the hero introduce the DPGSA University of Nairobi chapter directly: retain synchronized carousel headlines while adding a concise organization description and an About link visible in the first screen.
+- [x] Place desktop section descriptions immediately below the heading they explain instead of at the far right. Use consistent gallery image frames and equal-height cards without cropping photos; render single-photo galleries as one intentional card rather than an empty grid with unused columns.
+
 ## Existing media and registration
 
 Continue to use the Association photo archive on relevant pages, with accurate alt text and no invented event dates, names or officer details. Keep the supplied registration poster and show its registration fee KES 200, M-Pesa Till Number 1808373 and recipient name Bora Sarah. Do not invent an application form or additional payment instructions.

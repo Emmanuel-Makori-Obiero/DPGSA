@@ -37,7 +37,8 @@ export default function PhotoGallery({
         </header>
         <div
           className="photo-gallery-grid"
-          data-columns={columns}
+          data-columns={photos.length === 1 ? 1 : columns}
+          data-photo-count={photos.length}
           data-mobile-columns={mobileColumns}
           role="list"
           aria-label={title}
