@@ -10,3 +10,5 @@
 - **Privacy-policy legal sources** — [Kenya Data Protection Act, 2019](https://new.kenyalaw.org/akn/ke/act/2019/24/eng@2022-12-31), [ODPC rights of a data subject](https://www.odpc.go.ke/rights-of-a-data-subject/) and [Vercel Privacy Notice](https://vercel.com/legal/privacy-notice), linked from the policy page.
 
 - **Additional Activities gallery photographs** — four images selected from the nine-photo archive supplied by the user on 30 October 2026. The site uses responsive AVIF and WebP derivatives; the uploaded archive remains unchanged. Captions identify visible DPGSK and Amnesty International branding without attributing those events to DPGSA.
+
+- **About-page community photographs** — two images from the user-supplied 30 October 2026 photo archive, served as AVIF and WebP derivatives. One image shows a DPGSA awareness frame with DPGSK branding in the background; both captions remain descriptive and avoid naming pictured people.

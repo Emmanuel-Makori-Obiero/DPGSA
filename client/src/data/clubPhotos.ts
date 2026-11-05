@@ -119,6 +119,23 @@ export const activityArchivePhotos = [
   ),
 ] satisfies ClubPhoto[];
 
+export const aboutStoryPhotos = [
+  photo(
+    "about-community-walk-01",
+    854,
+    1280,
+    "A group of people walks together along an outdoor paved path.",
+    "A shared outdoor moment from the supplied photo archive."
+  ),
+  photo(
+    "about-dpgsa-awareness-01",
+    810,
+    1440,
+    "Two people pose with a DPGSA-branded social-media frame in front of a DPGSK backdrop.",
+    "A DPGSA awareness campaign portrait in the wider data privacy community."
+  ),
+] satisfies ClubPhoto[];
+
 export const essayCompetitionPhotos = [
   photo(
     "essay-competition-01",
