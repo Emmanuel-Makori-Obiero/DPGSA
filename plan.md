@@ -12,7 +12,7 @@ Add the supplied DPGSA LinkedIn and Instagram links to the footer. Give feature,
 
 Keep route-level pages in `client/src/pages/`, DPGSA-owned layout and media components in `client/src/components/site/`, reusable interface primitives in `client/src/components/ui/`, and photo metadata/headlines in `client/src/data/`. Keep route metadata in `routes.tsx` and document that Vercel uses static prerendering while `server/`, `shared/` and `drizzle/` remain for the optional Express/Docker target.
 
-At phone widths, use the compact three-photo homepage mosaic: keep the portrait auditorium photo beside the two supporting photos. Arrange only the Association Moments gallery in two columns to use the available phone width and reduce its vertical height; retain full-width gallery cards elsewhere. Preserve image aspect ratios, keep the headline readable and position the next control away from faces and copy. Keep mobile navigation links at least 44px high.
+At phone widths, use the compact three-photo homepage mosaic: keep the portrait auditorium photo beside the two supporting photos. Arrange only the Association Moments gallery in two columns to use the available phone width and reduce its vertical height; retain full-width gallery cards elsewhere. Preserve image aspect ratios, keep the headline readable and position the next control away from faces. Keep mobile navigation links at least 44px high.
 
 Keep the shared site header sticky on all routes. On the homepage, retain the translucent masthead over the mosaic at the top of the page and keep it visible while scrolling. Add scroll offsets so anchored headings remain visible below the sticky header.
 
@@ -23,7 +23,7 @@ On desktop, put section descriptions directly under their associated headings in
 ## User-supplied desktop layout references
 
 - [Association Moments layout and equal image sections](https://drive.google.com/file/d/1OgqQgUQGECmI0tWAiO1ymq-DN9VBm9oZ/view?usp=sharing)
-- [Community group-photo layout](https://drive.google.com/file/d/1eIJE9Af-r7ysGxQyJ01cyPKqaaNtD8GJ/view?usp=sharing)
+- [Community group-photo layout](https://drive.google.com/file/d/1eIJE9Af-r7ysGxQy01cyPKqaaNtD8GJ/view?usp=sharing)
 - [Gallery section sizing](https://drive.google.com/file/d/1DJxoxPKDI5hZ8KUfmMgzOBjMjRIz1glr/view?usp=sharing)
 
 ## Sources for the privacy page
@@ -36,7 +36,10 @@ Vercel’s [Privacy Notice](https://vercel.com/legal/privacy-notice) describes p
 
 Add a fixed, responsive banner to the shared layout, following the supplied reference’s full-width white strip, prominent privacy heading, short explanatory copy, outlined rejection action and blue primary acceptance action. Keep the copy accurate: the public site does not currently use advertising or analytics cookies. Save the visitor’s choice in a first-party preference cookie for six months; do not enable optional tracking. Link the banner to a cookie-specific section of `/privacy-policy`, explain the preference cookie there, and provide a footer control to reopen the choices. Preserve keyboard access and reduced-motion support.
 
-
 ## Additional photo-led experience
 
 Use the user-provided Wakili wa Watoto site as visual inspiration only: take cues from its mission-first hierarchy, human warmth and varied image sections without copying its layout, copy or brand assets. Distribute the supplied 2026-10-30 photo archive across About, Activities, Publications, Resources and Membership Registration in small increments; place the Activities archive gallery before the JuaTerms partnership section. Keep images uncropped where practical, use responsive AVIF/WebP derivatives, and write factual alt text and captions. Identify visible DPGSK or Amnesty International branding accurately; do not imply an outside-branded event was hosted by DPGSA. Add voices/testimonials only from real user-provided or specifically approved recordings and quotes with permission; do not invent names, quotations, affiliations or audio.
+
+## Homepage below-the-fold refresh
+
+Keep the existing three-photo homepage carousel and mission-introduction block unchanged. Rework the existing Focus areas section below them into a DPGSA-branded, Aceternity-inspired layered card stack using only the four already-published focus topics: Digital Rights and Policy Regulation, Cybercrimes & Digital Fraud, Internet Governance, and law with contemporary technologies. Preserve the existing resource links and make the cards readable, keyboard accessible and mobile-friendly; use DPGSA blue, subtle spotlight depth and reduced-motion-safe hover feedback. Do not call these official new objectives without approved source text, and do not invent team identities, testimonials or quotations. Use existing assets and dependencies only.

@@ -16,6 +16,8 @@ Remove the JuaTerms partnership photos from the homepage carousel. Use DPGSA mee
 
 Give homepage focus, activity and gallery cards a noticeable, accessible pale-blue hover/focus color change as well as their existing shadow. Keep the transition short and respect reduced-motion preferences.
 
+- [x] Refresh only the below-the-fold Focus areas section after the existing slider, mission block and Association moments; keep those sections intact. Use the four already-published focus topics in a clear layered-card treatment inspired by the reference’s objectives section, brand it with DPGSA blue, preserve links to Resources and accessible keyboard/mobile/reduced-motion behavior, and do not call the topics official new objectives or add fictional team/testimonials.
+
 ## Cookie banner and preferences
 
 - [x] Add a full-width, responsive privacy banner following the supplied reference, with “We value your privacy,” an explanatory message, a Cookie Policy link, and separate “Reject All” and “Accept All” buttons. Make the buttons keyboard accessible and keep the copy accurate: the public site currently uses no advertising or analytics cookies.

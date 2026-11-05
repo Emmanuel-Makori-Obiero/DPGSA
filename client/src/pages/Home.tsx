@@ -88,31 +88,50 @@ export default function Home() {
         mobileColumns={2}
       />
 
-      <section className="about-band" aria-labelledby="focus-title">
-        <div className="content-inner">
-          <header className="center-section-heading">
+      <section
+        className="about-band home-focus-section"
+        aria-labelledby="focus-title"
+      >
+        <div className="content-inner home-focus-inner">
+          <div className="home-focus-copy">
             <p className="section-kicker">Our areas of interest</p>
             <h2 id="focus-title">Focus areas</h2>
-            <p>
+            <p className="home-focus-description">
               Explore the intersections of law, data privacy and emerging
               technology.
             </p>
-          </header>
-          <div className="feature-cards focus-cards">
-            {focusAreas.map(({ icon: Icon, title }) => (
-              <article className="feature-card" key={title}>
-                <Icon size={34} strokeWidth={1.7} aria-hidden="true" />
-                <h3>{title}</h3>
+            <a
+              className="home-focus-resource-link"
+              href="/resources#resource-focus-title"
+            >
+              Explore resources <ChevronRight size={16} aria-hidden="true" />
+            </a>
+          </div>
+          <ul className="home-focus-deck" aria-label="DPGSA focus areas">
+            {focusAreas.map(({ icon: Icon, title }, index) => (
+              <li className="home-focus-item" key={title}>
                 <a
-                  className="card-learn-more"
+                  className="home-focus-card"
                   href="/resources#resource-focus-title"
                   aria-label={`Learn more about ${title}`}
                 >
-                  Learn more <ChevronRight size={15} aria-hidden="true" />
+                  <span className="home-focus-card-number" aria-hidden="true">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <span className="home-focus-card-icon" aria-hidden="true">
+                    <Icon size={24} strokeWidth={1.7} />
+                  </span>
+                  <span className="home-focus-card-copy">
+                    <span>Focus area {String(index + 1).padStart(2, "0")}</span>
+                    <strong>{title}</strong>
+                  </span>
+                  <span className="home-focus-card-link" aria-hidden="true">
+                    Learn more <ChevronRight size={15} />
+                  </span>
                 </a>
-              </article>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
