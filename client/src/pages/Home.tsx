@@ -1,4 +1,5 @@
 import {
+  ArrowLeftRight,
   BookOpen,
   ChevronRight,
   Globe,
@@ -7,6 +8,7 @@ import {
   ShieldCheck,
 } from "lucide-react";
 import HomeHeroSlider from "@/components/site/HomeHeroSlider";
+import HomePhotoSlider from "@/components/site/HomePhotoSlider";
 import PhotoGallery from "@/components/site/PhotoGallery";
 import { essayCompetitionPhotos, meetingPhotos } from "@/data/clubPhotos";
 
@@ -106,8 +108,14 @@ export default function Home() {
             >
               Explore resources <ChevronRight size={16} aria-hidden="true" />
             </a>
+            <p className="mobile-swipe-hint">
+              <ArrowLeftRight size={14} aria-hidden="true" /> Swipe to explore
+            </p>
           </div>
-          <ul className="home-focus-deck" aria-label="DPGSA focus areas">
+          <ul
+            className="home-focus-deck"
+            aria-label="DPGSA focus areas; scroll horizontally to view all on phones"
+          >
             {focusAreas.map(({ icon: Icon, title }, index) => (
               <li className="home-focus-item" key={title}>
                 <a
@@ -148,7 +156,15 @@ export default function Home() {
             Explore activities <ChevronRight size={14} aria-hidden="true" />
           </a>
         </div>
-        <div className="activity-list home-activity-list">
+        <p className="mobile-swipe-hint">
+          <ArrowLeftRight size={14} aria-hidden="true" /> Swipe for more
+          activities
+        </p>
+        <div
+          className="activity-list home-activity-list"
+          role="region"
+          aria-label="Homepage activity cards; scroll horizontally to view all on phones"
+        >
           {activities.map(({ title, description }) => (
             <article className="activity-card" key={title}>
               <BookOpen size={21} aria-hidden="true" />
@@ -198,6 +214,7 @@ export default function Home() {
           </a>
         </div>
       </section>
+      <HomePhotoSlider />
     </>
   );
 }

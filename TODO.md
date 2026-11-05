@@ -12,6 +12,8 @@ Add these official profiles to the shared footer: [DPGSA on LinkedIn](https://ww
 
 Remove the JuaTerms partnership photos from the homepage carousel. Use DPGSA meeting and essay-competition photos instead, including the auditorium photograph. Select slide-specific image positioning so visible faces stay in frame. Keep edge-to-edge media, AVIF/WebP delivery, automatic three-second rotation, accessible pause/manual controls and reduced-motion support. Keep JuaTerms photos on the Activities partnership section only.
 
+- [x] “Maybe at the phone at the bottom of the home page you implement a slider for images or testimonials which go from right to left or left to right many images.” Add a phone-only photo slider above the footer using many existing DPGSA meeting and essay-competition photos; move horizontally toward the next image; support touch swipes and previous/next/pause controls; keep alt text and captions factual; disable autoplay for reduced-motion preferences and pause during keyboard focus, hover and hidden tabs. Do not invent testimonials, and do not change the laptop layout.
+
 - [x] Rotate the homepage headline in sync with the active hero photo set on the existing three-second interval. Keep text factual, the transition subtle, reduced-motion support intact, and automatic screen-reader announcements disabled.
 
 Give homepage focus, activity and gallery cards a noticeable, accessible pale-blue hover/focus color change as well as their existing shadow. Keep the transition short and respect reduced-motion preferences.
@@ -30,6 +32,7 @@ Give homepage focus, activity and gallery cards a noticeable, accessible pale-bl
 ## Responsive layout
 
 - [x] At phone widths, use the compact three-photo carousel mosaic, with the portrait meeting photo beside the two supporting images. Arrange only Association Moments in a compact two-column grid to use available phone width and reduce its vertical height; keep other galleries full width. Preserve image aspect ratios; keep the headline readable, the next control clear of faces and copy, mobile navigation links at least 44px high, and stack section headings and descriptions at tablet widths where side-by-side columns become cramped.
+- [x] “The way the UI looks beautiful at the laptop it should be responsive and beautiful at the phone.” Keep the laptop layout unchanged; make the phone homepage feel balanced rather than like a long vertical stack by giving the hero photos a substantial display and making focus-area/activity cards horizontally swipeable with a visible cue, readable card content and keyboard access.
 
 ## Sticky navigation, hero introduction and gallery layout
 
@@ -42,7 +45,6 @@ Give homepage focus, activity and gallery cards a noticeable, accessible pale-bl
 Continue to use the Association photo archive on relevant pages, with accurate alt text and no invented event dates, names or officer details. Keep the supplied registration poster and show its registration fee KES 200, M-Pesa Till Number 1808373 and recipient name Bora Sarah. Do not invent an application form or additional payment instructions.
 
 Keep `npm run dev:static`, all route metadata, the route manifest, sitemap, clean Vercel routes and static prerender working together. Add no dependencies.
-
 
 ## Additional photo-led experience
 
