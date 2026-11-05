@@ -40,3 +40,11 @@ Give homepage focus, activity and gallery cards a noticeable, accessible pale-bl
 Continue to use the Association photo archive on relevant pages, with accurate alt text and no invented event dates, names or officer details. Keep the supplied registration poster and show its registration fee KES 200, M-Pesa Till Number 1808373 and recipient name Bora Sarah. Do not invent an application form or additional payment instructions.
 
 Keep `npm run dev:static`, all route metadata, the route manifest, sitemap, clean Vercel routes and static prerender working together. Add no dependencies.
+
+
+## Additional photo-led experience
+
+- [x] Add a responsive Activities gallery before the JuaTerms partnership section using four photographs from the supplied archive; preserve the full frames, provide descriptive alt text and factual captions, and identify DPGSK and Amnesty International branding without attributing those events to DPGSA.
+- [ ] Add photos from the supplied nine-image archive to About, Activities, Publications, Resources and Membership Registration so each relevant page is visually lively; use all suitable archive photos, preserve aspect ratios, add accurate alt text/captions, and do not present DPGSK- or Amnesty International-branded activity as a DPGSA-hosted event.
+- [ ] Add real community voices/testimonials only from user-provided or explicitly approved recordings/quotes with permission; do not invent speakers, names, quotations or audio, and provide accessible transcripts and playback controls.
+- [ ] Use the Wakili wa Watoto site only as inspiration for mission-first hierarchy and human-centered media; do not copy its layout, wording, brand assets, or fictional team/testimonials.

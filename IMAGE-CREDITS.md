@@ -8,3 +8,5 @@
 - **Homepage social preview** — original user-supplied DPGSA auditorium-meeting JPEG, copied without modification to `client/public/images/dpgsa-auditorium-meeting.jpg`.
 - **Bundled hero network illustration** — `client/public/images/dpgsa-network-background.svg`, a custom vector graphic used by the site.
 - **Privacy-policy legal sources** — [Kenya Data Protection Act, 2019](https://new.kenyalaw.org/akn/ke/act/2019/24/eng@2022-12-31), [ODPC rights of a data subject](https://www.odpc.go.ke/rights-of-a-data-subject/) and [Vercel Privacy Notice](https://vercel.com/legal/privacy-notice), linked from the policy page.
+
+- **Additional Activities gallery photographs** — four images selected from the nine-photo archive supplied by the user on 30 October 2026. The site uses responsive AVIF and WebP derivatives; the uploaded archive remains unchanged. Captions identify visible DPGSK and Amnesty International branding without attributing those events to DPGSA.

@@ -88,6 +88,37 @@ export const juaTermsPhotos = [
   ),
 ] satisfies ClubPhoto[];
 
+export const activityArchivePhotos = [
+  photo(
+    "activity-audience-01",
+    1440,
+    959,
+    "Attendees seated in an audience during an event.",
+    "Audience members listen during an event."
+  ),
+  photo(
+    "activity-dpgsk-ai-talk-01",
+    1440,
+    1011,
+    "A speaker presents a slide about AI governance and the DPO function, with DPGSK branding visible.",
+    "A speaker at an event with DPGSK branding."
+  ),
+  photo(
+    "activity-amnesty-data-talk-01",
+    1440,
+    961,
+    "A speaker holds a microphone in front of an Amnesty International banner.",
+    "A speaker at an event with Amnesty International branding."
+  ),
+  photo(
+    "activity-panel-discussion-01",
+    1040,
+    695,
+    "A panelist gestures while other participants listen during a discussion.",
+    "A moment from a panel discussion."
+  ),
+] satisfies ClubPhoto[];
+
 export const essayCompetitionPhotos = [
   photo(
     "essay-competition-01",

@@ -1,7 +1,7 @@
 import { ArrowRight, CalendarDays } from "lucide-react";
 import { PageIntro } from "@/components/site/SiteLayout";
 import PhotoGallery from "@/components/site/PhotoGallery";
-import { juaTermsPhotos } from "@/data/clubPhotos";
+import { activityArchivePhotos, juaTermsPhotos } from "@/data/clubPhotos";
 
 const activities = [
   [
@@ -66,6 +66,14 @@ export default function Events() {
           </div>
         </div>
       </section>
+      <PhotoGallery
+        eyebrow="Community learning"
+        title="Moments from learning and discussion."
+        description="Photos from the supplied event archive, with captions reflecting the organizations visible in each photograph."
+        photos={activityArchivePhotos}
+        tone="muted"
+        columns={2}
+      />
       <section
         className="partnership-feature"
         aria-labelledby="juaterms-partnership-title"

@@ -35,3 +35,8 @@ Vercel’s [Privacy Notice](https://vercel.com/legal/privacy-notice) describes p
 ## Cookie preferences
 
 Add a fixed, responsive banner to the shared layout, following the supplied reference’s full-width white strip, prominent privacy heading, short explanatory copy, outlined rejection action and blue primary acceptance action. Keep the copy accurate: the public site does not currently use advertising or analytics cookies. Save the visitor’s choice in a first-party preference cookie for six months; do not enable optional tracking. Link the banner to a cookie-specific section of `/privacy-policy`, explain the preference cookie there, and provide a footer control to reopen the choices. Preserve keyboard access and reduced-motion support.
+
+
+## Additional photo-led experience
+
+Use the user-provided Wakili wa Watoto site as visual inspiration only: take cues from its mission-first hierarchy, human warmth and varied image sections without copying its layout, copy or brand assets. Distribute the supplied 2026-10-30 photo archive across About, Activities, Publications, Resources and Membership Registration in small increments; place the Activities archive gallery before the JuaTerms partnership section. Keep images uncropped where practical, use responsive AVIF/WebP derivatives, and write factual alt text and captions. Identify visible DPGSK or Amnesty International branding accurately; do not imply an outside-branded event was hosted by DPGSA. Add voices/testimonials only from real user-provided or specifically approved recordings and quotes with permission; do not invent names, quotations, affiliations or audio.
